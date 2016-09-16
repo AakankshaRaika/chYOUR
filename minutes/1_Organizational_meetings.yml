@@ -1,0 +1,26 @@
+date: August 31, 2016, September 5, 2016, September 6, 2016
+meeting_type: group
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, btgreen2, dnhickso, jrh7, vluo, yosephha]
+absent: []
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: None.},
+  {ubit: alectuoh, progress: None.},
+  {ubit: alschmid, progress: None.},
+  {ubit: apillai, progress: None.},
+  {ubit: bclee, progress: None.},
+  {ubit: btgreen2, progress: None.},
+  {ubit: dnhickso, progress: None.},
+  {ubit: jrh7, progress: None.},
+  {ubit: vluo, progress: None.},Per
+  {ubit: yosephha, progress: None.}
+  ]
+issues: []
+Notes:  |
+  Project ideas discussed, it was decided to implement an android app - chYOUR.  Focus on receiving an alert when near a location where a task needs to be completed.
+  Features: Gmail/Outlook account integration, GPS integration, personal accouts with server/database, ability to sync tasks with a group (family), voice notifications.
+  Met for intro to android programming led by Ash, simple sample project built and guidance provided to all. 
+  Group will subdivide based on availabilities Team A (Aakanksha , Dom , Yoseph , Barry  , Vivian), Team B (Ash , Brian , Jason , Andrea , Alec).
+  Team A will begin focus on main task page, settings, and features.
+  Team B will begin focus on login and sign up page.
+  
