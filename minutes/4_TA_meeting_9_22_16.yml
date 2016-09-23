@@ -1,0 +1,28 @@
+date: September 22, 2016
+meeting_type: TA
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, dnhickso, jrh7, vluo, yosephha]
+absent: [btgreen2]
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: None.},
+  {ubit: alectuoh, progress: None.},
+  {ubit: alschmid, progress: None.},
+  {ubit: apillai, progress: None.},
+  {ubit: bclee, progress: None.},
+  {ubit: btgreen2, progress: None.},
+  {ubit: dnhickso, progress: None.},
+  {ubit: jrh7, progress: None.},
+  {ubit: vluo, progress: None.},Per
+  {ubit: yosephha, progress: None.}
+  ]
+issues: []
+Notes:  |
+  Discussed splitting of team and tasks with Ruhan in a broad sense.  Front end group will be responsible for the 
+  primary app functions including creation / management of tasks, google map integration, google and outlook calendar 
+  sync, settings, etc.  Front end will take more of a full team approach, splitting methods amongst its memebers.  
+  Back end team will be responsible for server creation and setup, framework selection, database creation and management, 
+  and securing credential checking and creation.  Jason and Andrea will begin looking into the database, Alec will 
+  research server hosting options, and Ash will research REST API and connecting the app to the DB.  Teams will meet
+  again later in the week to discuss findings and decide on details and splitting moving forward.
+
+  

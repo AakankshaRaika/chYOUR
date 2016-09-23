@@ -1,0 +1,25 @@
+date: September 21, 2016
+meeting_type: Group
+attendance: [alectuoh, alschmid, apillai, btgreen2, dnhickso, jrh7, vluo, yosephha]
+absent: [bclee]
+excused_absences: [aakanksh]
+task_progress: [
+  {ubit: aakanksh, progress: None.},
+  {ubit: alectuoh, progress: None.},
+  {ubit: alschmid, progress: None.},
+  {ubit: apillai, progress: None.},
+  {ubit: bclee, progress: None.},
+  {ubit: btgreen2, progress: None.},
+  {ubit: dnhickso, progress: None.},
+  {ubit: jrh7, progress: None.},
+  {ubit: vluo, progress: None.},Per
+  {ubit: yosephha, progress: None.}
+  ]
+issues: []
+Notes:  |
+  General organizational type meeting.  Team A and Team B briefly discussed general responsibilities respectively and 
+  it was decided that we needed to research possible tasks and start thinking about how we will divide the responsibilities
+  amongst each member of the team.  Server side needs to determine type of server and host, framework, database, etc...
+  Front-end will refine the list of needed methods and related topics.
+
+  
