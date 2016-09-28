@@ -29,7 +29,7 @@
             android:layout_weight="0.72"
             android:textStyle="normal|bold|italic"
             android:visibility="visible"
-            android:background="#518cbf" />
+            android:background="?attr/colorPrimary" />
 
         <Button
             android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
             android:id="@+id/MAPbutton"
             android:layout_weight="0.72"
             android:textStyle="normal|bold|italic"
-            android:background="#518cbf" />
+            android:background="?attr/colorPrimary" />
 
         <Button
             android:layout_width="135dp"
@@ -47,7 +47,7 @@
             android:id="@+id/Settingbutton"
             android:textStyle="normal|bold|italic"
             android:singleLine="false"
-            android:background="#518cbf" />
+            android:background="?attr/colorPrimary" />
 
     </LinearLayout>
 
@@ -67,10 +67,10 @@
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="372dp"
+            android:layout_height="400dp"
             android:id="@+id/listView"
             android:choiceMode="none"
-            android:background="#a1c2f4" />
+            android:background="?attr/colorBackgroundFloating" />
     </LinearLayout>
 
     <EditText
@@ -87,8 +87,9 @@
         android:layout_height="wrap_content"
         android:text="ADD"
         android:id="@+id/ADDDTASK"
-        android:background="#439c4a"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true" />
+        android:background="@android:color/holo_red_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
+
