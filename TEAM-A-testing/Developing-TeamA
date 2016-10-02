@@ -1,0 +1,10 @@
+Everyone in team A will push their code here to test before pushing 
+it to the master. Any code that has not been tested here and pushed into master directly will be deleted from master. 
+
+steps are :
+ 1) your own branch 
+ 2) your team branch 
+ 3) development branch for all 10 of us. 
+ 4) testing branch 
+ and the last 
+ 5) Master. 
