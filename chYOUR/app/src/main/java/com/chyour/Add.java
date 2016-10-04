@@ -21,11 +21,11 @@ import android.widget.Toast;
 public class Add extends AppCompatActivity {
 
 	DBHelper myDb;
-	EditText editName, editLocation, editStart ,editFinish;
-	Button btnAddData;
+    
+    EditText editName, editLocation, editStart ,editFinish;  // text inputs on the add_task page
 
-
-
+    
+	Button btnAddData;  // button on the add_task page
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +33,10 @@ public class Add extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		myDb = new DBHelper(this);
 
-		editName = (EditText)findViewById(R.id.editText_task_name);
-		editLocation = (EditText)findViewById(R.id.editText_location);
-		editStart = (EditText)findViewById(R.id.editText_start_time);
-		editFinish = (EditText)findViewById(R.id.editText_end_time);
+		editName = (EditText)findViewById(R.id.editText_task_name);     // cast task_name
+		editLocation = (EditText)findViewById(R.id.editText_location);  // cast location
+		editStart = (EditText)findViewById(R.id.editText_start_time);   // cast start time
+		editFinish = (EditText)findViewById(R.id.editText_end_time);    // cast end time
 		btnAddData = (Button) findViewById(R.id.button_save_add);
 
 	}
