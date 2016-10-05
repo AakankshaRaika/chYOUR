@@ -1,0 +1,35 @@
+chYOUR Frequently Asked Questions:
+
+• What are the default locations?
+	• For groceries the default locations are : Tops and Wegmans.
+	• For hardware the default locations are :  House depot and Lowes
+	• For household the default locations are : Walmart and Target
+	• For general Pharmacy  the default locations are : CVS and Walgreens. 
+
+• How do I add family members?
+	• Go to the settings menu and click on the add member button. 
+
+• How do I add calendars?
+	• Go to settings and click on add calendar you will have 3 options 
+		◦ Google 
+		◦ Outlook
+		◦ Phone 
+• Will the app run even when I close it?
+	• Yes it will it is a background services application. You will have to sign out in order to close it completely.  
+
+• Will it drain my battery ? 
+	• As it is a background services app it will. 
+
+• Will it also access my emails?
+	• No it won’t it will only access your calendar.  
+
+• How will you know where to take us if you have multiple default location?
+	• The default algorithm will determine the closest, most compatible store for you based on distance. 
+
+• What if I don’t wish to go to the default location?
+	• You may change your default location to whichever preferred vendors or stores you wish. 
+
+• Will my family members be able to see my list and edit or delete items from it?
+	• Family members will be able to see the items and lists that you personally share with them. You may have your own private list that is accessible to only yourself.  
+
+
