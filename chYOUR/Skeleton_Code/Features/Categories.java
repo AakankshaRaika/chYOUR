@@ -49,7 +49,7 @@ public class Categories {
 
 		if (groceryPreference == Null) {
 			if (dist_defaultGrocery1 <= dist_defaultGrocery2){	// If defaultGrocery1 (Wegmans) is closer than defaultGrocery2 (Tops), return Wegmans.
-				return defaultGrocery1;
+				return defaultGrocery1; // We used <= because if, in the rare case that the distances are equal, we will go with defaultGrocery1 (Wegmans)
 			}
 			else {												// Else return Tops
 				return defaultGrocery2;
