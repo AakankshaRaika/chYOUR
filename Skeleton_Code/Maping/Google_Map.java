@@ -5,5 +5,5 @@ package Maping;
  * Task onwers sprint 2 : Dom and Vivan 
  */
 public class Google_Map {
-//Add google maps to the app. 
+//Got the Google API 
 }
