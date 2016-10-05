@@ -34,25 +34,31 @@ public class Add extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         myDb = new DBHelper(this);
         
+        
+        //    cast the input texts
+        
         editName = (EditText)findViewById(R.id.editText_task_name);
         editLocation = (EditText)findViewById(R.id.editText_location);
         editStart = (EditText)findViewById(R.id.editText_start_time);
         editFinish = (EditText)findViewById(R.id.editText_end_time);
+        
+        // cast the save button
         btnAddData = (Button) findViewById(R.id.button_save_add);
         
     }
     
     public Add(){
-        btnAddData.setOnClickListener(
+        btnAddData.setOnClickListener(          // this is a thread that listens if button is pressed
                                       new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // inserts corosponding values to the table, check DBHelper to see how insert works
                 boolean isInserted =  myDb.insert(editName.getText().toString(),
                                                   editLocation.getText().toString(),
                                                   editStart.getText().toString(),
                                                   editFinish.getText().toString());
                 
-                if(isInserted == true)
+                if(isInserted == true)   //prints statmenet for conformation
                     Toast.makeText(getApplicationContext(),"Data Inserted",Toast.LENGTH_LONG).show();
                 else
                     Toast.makeText(getApplicationContext(),"Data not Inserted",Toast.LENGTH_LONG).show();

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:text="NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_task_name"
+            android:hint="Enter name of Task"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical|center" />
+
+        <TextView
+            android:text="Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_location"
+            android:hint="Enter Address"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:gravity="center_vertical|center" />
+
+        <TextView
+            android:text="TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/background_dark" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/editText_start_time"
+                android:hint="FROM"
+                android:layout_weight="0.02" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:ems="10"
+                android:id="@+id/editText_end_time"
+                android:hint="TO"
+                android:inputType="time" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="242dp">
+
+                <Button
+                    android:text="SAVE"
+                    android:layout_width="186dp"
+                    android:layout_height="64dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:id="@+id/button_save_add" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
