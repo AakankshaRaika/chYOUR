@@ -16,6 +16,8 @@ public class Help {
 	 * what are default locations page // Done
 	 * contact us page
 	 */
+	
+	// *********** FAQ Printing Begins ***********
 	BufferedReader br = null;
 
 	try {
@@ -37,8 +39,9 @@ public class Help {
 			ex.printStackTrace();
 		}
 	}
+	// *********** FAQ Printing Ends ***********
 	
-	
+	// *********** User Guide Printing Begins ***********
 	BufferedReader br2 = null;
 
 	try {
@@ -60,7 +63,7 @@ public class Help {
 			ex.printStackTrace();
 		}
 	}
-	
+	// *********** User Guide Printing Ends ***********
 	
 	
 	
