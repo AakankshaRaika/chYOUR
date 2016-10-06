@@ -66,7 +66,13 @@ public class Help {
 	// *********** User Guide Printing Ends ***********
 	
 	
+	// Contact Page
 	
+	System.out.println("Contact Us:");
+	System.out.println("Shoot us an email if you have any questions, problems, or suggestions!");
+	System.out.println("chYOUR Email: chYOUR.team442@gmail.com");
+	
+	// We will add this to the app by making a GUI for it.
 	
 	
 }
