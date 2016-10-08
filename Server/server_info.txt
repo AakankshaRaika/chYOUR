@@ -1,0 +1,12 @@
+Server Specifications
+
+The server that is hosting our MySQL database is the university owned jarvis.cse.buffalo.edu.
+Username: developer
+Password: #IWillNotMessUpTheServer!
+IP Address: 128.205.44.23
+
+As the server is located on UB's network and not configured with a web domain, one must be connected to the physical network, wirelessly connected to UBSecure or eduroam, or connected fromoff campus and connected to the UB VPN (Anyconnect ~ vpn.buffalo.edu).
+
+Files for web access are located in the directory /var/www/html.
+
+Our server features a LAMP stack (Linux - Ubuntu Server, Apache2, MySQL, and PHP7) and is configured with phpmyadmin to facilitate ease of database management.
