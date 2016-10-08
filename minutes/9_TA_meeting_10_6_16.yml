@@ -1,0 +1,20 @@
+date: October 6, 2016
+meeting_type: TA
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, btgreen2, dnhickso, jrh7, vluo, yosephha]
+absent: []
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: Skeleton code finished, working on video and user/default/preferred locations},
+  {ubit: alectuoh, progress: PHP code finished in essence, awaiting database for tweaking and testing},
+  {ubit: alschmid, progress: Database ready for implementation, researching queries},
+  {ubit: apillai, progress: JSON parsing reaty for implementation and testing},
+  {ubit: bclee, progress: Code completed, working with Aakanksha over weekend on video},
+  {ubit: btgreen2, progress: Working with Ash on parsing and web comms, part of video team},
+  {ubit: dnhickso, progress: Google maps mostly implemented, needs more work},
+  {ubit: jrh7, progress: Server stack installed and configured, ready to implement database0},
+  {ubit: vluo, progress: Working with Dominique - google maps api - almost complete},
+  {ubit: yosephha, progress: Skeleton code and local DB implemented, adding / deleting tasks completed}
+  ]
+issues: [Location implementation more complicated than originally thought]
+Notes:  |
+  Plans for video - showcase new functionality.  We should discuss port usage with Jesse just in case there's a conflict.  Sprint 2 grading will be partly based on use of individual branches and commits, moreso for sprint 3.  We should be committing from our own usernames and not group coding to ensure proper credit.  We should include deployment instructions to help those wishing to install the project in Android studio.
