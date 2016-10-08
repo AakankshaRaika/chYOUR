@@ -1,0 +1,11 @@
+Database Information
+
+Database Name: chyourDB
+Root User password: chyour2016
+
+Remote username: phpuser
+Remote user password: chyour2016
+Remote user permissions: SELECT, INSERT, UPDATE and DELETE only.
+
+PHPMyadmin username: root
+PHPMyadmin password: chyour2016
