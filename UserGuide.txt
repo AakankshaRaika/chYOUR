@@ -1,0 +1,36 @@
+User Guide: Getting Started
+
+
+Features:
+
+Tasks
+1. Adding tasks to the list! Press the add button to add a new task. 
+2. Fill in the fields for location, times, and categories.
+3. Go about your daily life and chYour will help you find time to fit these tasks into your schedule.
+
+Appointments
+1. As you are adding your task to the list, you must select a category.
+2. For the category option, choose “Appointments”.
+3. Make sure you enter a correct and accurate value for location and time.
+
+Adding a Calendar
+1. Go to the settings menu.
+2. Link either your Google Calendar or Outlook Calendar by pressing their respective buttons.
+3. Log in to your accounts and they will be updated on chYour!
+
+Adding Family Members
+1. Go to the settings menu.
+2. Click Add Family Members
+3. Search for them via email or phone number.
+
+Deleting Account
+1. Go to the settings menu.
+2. Click on deactivate account
+3. Confirm that you will be leaving chYour.
+
+Cheers,
+chYour Support Team
+
+
+Oct 2nd 2016
+Barry Lee , Aakanksha Raika
