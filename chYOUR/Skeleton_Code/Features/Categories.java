@@ -23,6 +23,9 @@ public class Categories {
 	private string defaultGenPharm1 = "CVS";
 	private string defaultGenPharm2 = "Walgreens";
 	
+	public enum Categories{
+		GROCERIES, HOUSEHOLD, HARDWARE, GENPHARM, MEETINGS_APPOINTMENTS, OTHER_CAT
+	}
 	
 	public Categories() {
 	 	/*
