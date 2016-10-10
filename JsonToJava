@@ -1,0 +1,45 @@
+public class JsonToJava
+{
+    private String username;
+
+    private boolean authentication;
+
+    private String password;
+
+    public String getUsername ()
+    {
+        return username;
+    }
+
+    public void setUsername (String username)
+    {
+        this.username = username;
+    }
+
+    public boolean getAuthentication ()
+    {
+        return authentication;
+    }
+
+    public void setAuthentication (boolean authentication)
+    {
+        this.authentication = authentication;
+    }
+
+    public String getPassword ()
+    {
+        return password;
+    }
+
+    public void setPassword (String password)
+    {
+        this.password = password;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "JsonToJava [username = "+username+", authentication = "+authentication+", password = "+password+"]";
+    }
+}
+	
