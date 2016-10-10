@@ -21,8 +21,8 @@ import android.widget.Toast;
 public class Add extends AppCompatActivity {
     
     DBHelper myDb;
-    EditText editName, editLocation, editStart ,editFinish;
-    Button btnAddData;
+    EditText editName, editLocation, editStart ,editFinish;     // variables for input from screen
+    Button btnAddData;                                          // variable for Button
     
     
     
@@ -33,6 +33,9 @@ public class Add extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         myDb = new DBHelper(this);
         
+        
+        //    what i have done below is cast each input and assign them to their corrosponding variables
+         
         editName = (EditText)findViewById(R.id.editText_task_name);
         editLocation = (EditText)findViewById(R.id.editText_location);
         editStart = (EditText)findViewById(R.id.editText_start_time);
@@ -42,15 +45,19 @@ public class Add extends AppCompatActivity {
     }
     
     public Add(){
-        btnAddData.setOnClickListener(
+        btnAddData.setOnClickListener(                  // listens for when the when the button is pressed
                                       new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                
+                // below the values are converted to a string and added to the table in created by DBhelper
+                
                 boolean isInserted =  myDb.insert(editName.getText().toString(),
                                                   editLocation.getText().toString(),
                                                   editStart.getText().toString(),
                                                   editFinish.getText().toString());
                 
+                // the if statment below displays confirmation messege to app screen 
                 if(isInserted == true)
                     Toast.makeText(getApplicationContext(),"Data Inserted",Toast.LENGTH_LONG).show();
                 else
