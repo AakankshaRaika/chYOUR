@@ -1,0 +1,9 @@
+create user 'phpuser'@'localhost' identified by 'chyour2016';
+
+grant select, insert, update, delete on chyour.* to 'phpuser'@'localhost';
+
+create user 'phpuser'@'%' identified by 'chyour2016';
+
+grant select, insert, update, delete on chyour.* to 'phpuser'@'%';
+
+flush privileges;

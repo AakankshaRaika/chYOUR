@@ -1,0 +1,21 @@
+CREATE TABLE `chyourDB`.`usersTBL` ( 
+	`userID` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT , 
+	`userName` VARCHAR(40) NOT NULL , 
+	`firstName` VARCHAR(255) NOT NULL , 
+	`lastName` VARCHAR(255) NOT NULL , 
+	`email` VARCHAR(255) NOT NULL , 
+	`password` VARCHAR(255) NOT NULL , 
+	PRIMARY KEY (`userID`), 
+	UNIQUE `userName` (`userName`(40)), 
+	UNIQUE `email` (`email`(255))
+	) ENGINE = InnoDB;
+
+CREATE TABLE `chyourDB`.`tasksTBL` ( 
+	`taskID` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT , 
+	`userID` INT UNSIGNED NOT NULL , 
+	`description` TEXT NOT NULL , 
+	`address` TEXT NOT NULL , 
+	`latitude` FLOAT(10,6) NOT NULL , 
+	`longitude` FLOAT(10,6) NOT NULL , 
+	PRIMARY KEY (`taskID`)
+	) ENGINE = InnoDB;
