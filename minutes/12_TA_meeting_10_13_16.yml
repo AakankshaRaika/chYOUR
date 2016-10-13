@@ -1,0 +1,20 @@
+date: October 13, 2016
+meeting_type: TA
+attendance: [alectuoh, apillai, bclee, btgreen2, jrh7, yosephha]
+absent: []
+excused_absences: [aakanksh, alschmid, dnhickso, vluo]
+task_progress: [
+  {ubit: aakanksh, progress: Absent},
+  {ubit: alectuoh, progress: Still working with php, will be assisting Ash with JSON communication},
+  {ubit: alschmid, progress: Absent},
+  {ubit: apillai, progress: JSON parsing complete, working on sending JSON to server},
+  {ubit: bclee, progress: Working with Google API implementation},
+  {ubit: btgreen2, progress: Taking over local DB configuration from Yoseph},
+  {ubit: dnhickso, progress: Absent},
+  {ubit: jrh7, progress: Finishing DB structure, will assist Alec with php, research SSL implementation},
+  {ubit: vluo, progress: Absent},
+  {ubit: yosephha, progress: Assisting with sign in / sign up on the app end to handle JSON transmission}
+  ]
+issues: []
+Notes:  |
+  Per Ruhan, we need to stop committing directly to master and development (merge only from feature / team branches), and we should only be merging to master on release.  Branches need to be cleaned up, issues need to be smaller and more individualized, updated.  It is critical for us to get the underlying code connected to the GUI as we are unable to truely test for any function at this time.  We should be able to have the app be able to send data to the server / DB bu the next TA meeting.  Since we are not using Google account sign in we need to plan for eventual SSL implementation.
