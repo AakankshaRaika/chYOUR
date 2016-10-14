@@ -1,0 +1,20 @@
+date: October 10, 2016
+meeting_type: Team
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, btgreen2, dnhickso, jrh7, vluo, yosephha]
+absent: []
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: Skeleton code finished, working on video and user/default/preferred locations},
+  {ubit: alectuoh, progress: PHP code finished in essence, awaiting database for tweaking and testing},
+  {ubit: alschmid, progress: Database ready for implementation, researching queries},
+  {ubit: apillai, progress: JSON parsing reaty for implementation and testing},
+  {ubit: bclee, progress: Code completed, working with Aakanksha over weekend on video},
+  {ubit: btgreen2, progress: Working with Ash on parsing and web comms, part of video team},
+  {ubit: dnhickso, progress: Google maps mostly implemented, needs more work},
+  {ubit: jrh7, progress: Server stack installed and configured, ready to implement database0},
+  {ubit: vluo, progress: Working with Dominique - google maps api - almost complete},
+  {ubit: yosephha, progress: Skeleton code and local DB implemented, adding / deleting tasks completed}
+  ]
+issues: [Team A feels it is running out of tasks to complete, Ash still wrestling with moving json data to the server]
+Notes:  |
+  Set primary goals for the sprint, we need to get the app functioning and underlying code connected to the GUI, and polish the GUI.  Yoseph and Vivian are being moved to Team B and Brian will move to team A as team A feels they do not have enough tasks remaining for 5 team members.  We will pool our resources to compile a master list of tasks remaining to evenly prioritize and assign tasks amongst the group.

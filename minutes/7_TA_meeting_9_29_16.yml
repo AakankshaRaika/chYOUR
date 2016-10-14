@@ -1,0 +1,20 @@
+date: September 29, 2016
+meeting_type: TA
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, dnhickso, jrh7, vluo, yosephha]
+absent: [btgreen2]
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: Skeleton code to be pushed by the weekend},
+  {ubit: alectuoh, progress: Researching php for DB communication},
+  {ubit: alschmid, progress: Researching MySQL for DB creation and queries},
+  {ubit: apillai, progress: Researching JSON parsing and communication to server},
+  {ubit: bclee, progress: Working with Aakanksha on general code},
+  {ubit: btgreen2, progress: Researching JSON parsing and web comm to php},
+  {ubit: dnhickso, progress: Working on google maps api implementation},
+  {ubit: jrh7, progress: Researching servers - 000webhost vs jarvis, prepping for mysql DB creation},
+  {ubit: vluo, progress: Working with Dominique - google maps api},
+  {ubit: yosephha, progress: Working on skeleton code with Aakanksha, local DB (sqlite) for local data storage}
+  ]
+issues: []
+Notes:  |
+  Sprint 2 goals - Have basic functions implemented for front end, ability to contact server and authorize log in / signup by end of sprint. 

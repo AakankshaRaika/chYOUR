@@ -1,0 +1,20 @@
+date: October 6, 2016
+meeting_type: Team
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, btgreen2, dnhickso, jrh7, vluo, yosephha]
+absent: []
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: Skeleton code finished, working on video and user/default/preferred locations},
+  {ubit: alectuoh, progress: PHP code finished in essence, awaiting database for tweaking and testing},
+  {ubit: alschmid, progress: Database ready for implementation, researching queries},
+  {ubit: apillai, progress: JSON parsing reaty for implementation and testing},
+  {ubit: bclee, progress: Code completed, working with Aakanksha over weekend on video},
+  {ubit: btgreen2, progress: Working with Ash on parsing and web comms, part of video team},
+  {ubit: dnhickso, progress: Google maps mostly implemented, needs more work},
+  {ubit: jrh7, progress: Server stack installed and configured, ready to implement database0},
+  {ubit: vluo, progress: Working with Dominique - google maps api - almost complete},
+  {ubit: yosephha, progress: Skeleton code and local DB implemented, adding / deleting tasks completed}
+  ]
+issues: [Location implementation more complicated than originally thought]
+Notes:  |
+  Team meeting later in the day after TA meeting.  Server information and connection discussed amongst both teams. As most features have been implemented on the front end, it was proposed to move 2 - 3 members from team A to team B as front end is running out of things to do.  Team B will have another sub meeting on Saturday to coordinate Server - PHP - MySQL layout and access.

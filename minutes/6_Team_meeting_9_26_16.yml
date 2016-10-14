@@ -1,0 +1,20 @@
+date: September 26, 2016
+meeting_type: Team
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, btgreen2, jrh7, vluo, yosephha]
+absent: []
+excused_absences: [dnhickso]
+task_progress: [
+  {ubit: aakanksh, progress: Started},
+  {ubit: alectuoh, progress: Started},
+  {ubit: alschmid, progress: Started},
+  {ubit: apillai, progress: Started},
+  {ubit: bclee, progress: Started},
+  {ubit: btgreen2, progress: Started},
+  {ubit: dnhickso, progress: Started},
+  {ubit: jrh7, progress: Started},
+  {ubit: vluo, progress: Started},
+  {ubit: yosephha, progress: Started}
+  ]
+issues: []
+Notes:  |
+ 	General meeting to coordinate between the two groups.  No major issues encountered, server hosting discussed, but still awaiting information from Jesse on UB managed server to decide the best route. 

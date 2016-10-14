@@ -1,0 +1,15 @@
+date: September 24, 2016
+meeting_type: Team 
+attendance: [alectuoh, alschmid, apillai, jrh7, btgreen2]
+absent: []
+excused_absences: []
+task_progress: [
+  {ubit: alectuoh, progress: Assigned - research and implement php},
+  {ubit: alschmid, progress: Assigned - Database creation and queries},
+  {ubit: apillai, progress: Assigned - JSON parsing and app to web comms},
+  {ubit: btgreen2, progress: Assigned - JSON parsing and app to web comms.},
+  {ubit: jrh7, progress: Assigned - Server setup / config, Database creation},
+  ]
+issues: [Discussion on whether to use 000webhost or UB CSE provided server (awaiting details)]
+Notes:  |
+	Team B meeting to assign tasks and work through some implementation details.
