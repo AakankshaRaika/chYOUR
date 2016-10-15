@@ -1,3 +1,5 @@
+//NOTE: cited https://developers.google.com/android/guides/api-client
+
 package com.example.dominiquehickson.chyourmap;
 
 import android.support.v4.app.FragmentActivity;
