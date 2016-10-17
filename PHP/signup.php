@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("chyourapp.000webhostapp.com", "id11983_root", "chyour2016", "id11983_chyourdb");
+$con=mysqli_connect("127.0.0.1", "phpuser", "chyour2016", "chyourdb");
 if(mysqli_connect_errno($con))
 {
 	echo '{"query_result":"ERROR"}';

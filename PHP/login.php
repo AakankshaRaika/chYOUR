@@ -1,10 +1,10 @@
 <?php
 if($_POST)
 {
-$host="localhost";
-$user="id11983_root";
+$host="127.0.0.1";
+$user="phpuser";
 $pass="chyour2016";
-$db="id11983_chyourdb";
+$db="chyourdb";
 	$username=$_POST['username'};
 $password=$_POST['password'];
 $conn=mysqli_connect($host,$user,$pass,$db);
