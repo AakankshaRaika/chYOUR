@@ -7,7 +7,7 @@ $pass="chyour2016";
 $db="chyourdb";
 	$username=$_POST['username'};
 $password=$_POST['password'];
-$conn=mysqli_connect($host,$user,$pass,$db);
+$conn=mysqli_connect($host,$user,$pass);
 	$query="SELECT * from userstbl where username='$username' and password='$password'";
 	$result=mysqli_query($conn, $query);
 	if(mysqli_num_rows($result)==1)

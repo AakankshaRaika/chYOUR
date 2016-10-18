@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("127.0.0.1", "phpuser", "chyour2016", "chyourdb");
+$con=mysqli_connect("127.0.0.1", "phpuser", "chyour2016");
 if(mysqli_connect_errno($con))
 {
 	echo '{"query_result":"ERROR"}';
