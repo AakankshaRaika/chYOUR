@@ -76,7 +76,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/et_firstName"
         android:background="#ffffff"
         android:layout_below="@+id/linearLayout2"
         android:layout_alignLeft="@+id/linearLayout2"
