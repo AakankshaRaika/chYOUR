@@ -66,5 +66,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     }
+
+    public Integer delete (Integer id)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        
+        return db.delete(TABLE_NAME, "id =" + id, null);
+    }
 }
 
