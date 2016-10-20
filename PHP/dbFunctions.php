@@ -15,11 +15,11 @@ class DB_Functions {
     function __destruct() {
          
     }
-public function storeUser($name, $email, $password) {
+public function storeUser($fullname, $email, $password) {
         $uuid = uniqid('', true);
  
-        $stmt = $this->conn->prepare("INSERT INTO usertbl(unique_id, name, email, password, created_at) VALUES(?, ?, ?, ?, NOW())");
-        $stmt->bind_param("sssss", $uuid, $name, $email, $password);
+        $stmt = $this->conn->prepare("INSERT INTO usertbl(unique_id, name, email, password) VALUES(?, ?, ?, NOW())");
+        $stmt->bind_param("sssss", $uuid, $fullname, $email, $password);
         $result = $stmt->execute();
         $stmt->close();
  
