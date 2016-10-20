@@ -18,7 +18,7 @@ class DB_Functions {
 public function storeUser($fullname, $email, $password) {
         $uuid = uniqid('', true);
  
-        $stmt = $this->conn->prepare("INSERT INTO usertbl(unique_id, name, email, password) VALUES(?, ?, ?, NOW())");
+        $stmt = $this->conn->prepare("INSERT INTO usertbl(unique_id, fullname, email, password) VALUES(?, ?, ?, NOW())");
         $stmt->bind_param("sssss", $uuid, $fullname, $email, $password);
         $result = $stmt->execute();
         $stmt->close();

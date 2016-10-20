@@ -29,9 +29,9 @@ if (isset($_POST['fullname']) && isset($_POST['email']) && isset($_POST['passwor
             $response["uid"] = $user["unique_id"];
             $response["user"]["fullname"] = $user["fullname"];
             $response["user"]["email"] = $user["email"];
-            $response["user"]["created_at"] = $user["created_at"];
-            $response["user"]["updated_at"] = $user["updated_at"];
-            echo json_encode($response);
+            
+            echo json_encode($fullname);
+	    echo json_encode($response);
         } else {
             // user failed to store
             $response["error"] = TRUE;
