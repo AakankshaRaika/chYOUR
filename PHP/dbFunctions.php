@@ -1,6 +1,6 @@
 <?php
 
-class DB_Functions {
+class dbFunctions {
  
     private $conn;
  
@@ -8,7 +8,7 @@ class DB_Functions {
     function __construct() {
         require_once 'dbConnect.php';
         // connecting to database
-        $db = new Db_Connect();
+        $db = new dbConnect();
         $this->conn = $db->connect();
     }
 	// destructor
@@ -18,7 +18,7 @@ class DB_Functions {
 public function storeUser($fullname, $email, $password) {
         $uuid = uniqid('', true);
  
-        $stmt = $this->conn->prepare("INSERT INTO usertbl(unique_id, fullname, email, password) VALUES(?, ?, ?, NOW())");
+        $stmt = $this->conn->prepare("INSERT INTO usertbl(userID, fullname, email, password) VALUES(?, ?, ?)");
         $stmt->bind_param("sssss", $uuid, $fullname, $email, $password);
         $result = $stmt->execute();
         $stmt->close();
@@ -37,7 +37,7 @@ public function storeUser($fullname, $email, $password) {
         }
     }
 /**
-     * Check user is existed or not
+     * Check if user exists
      */
     public function isUserExisted($email) {
         $stmt = $this->conn->prepare("SELECT email from users WHERE email = ?");
@@ -49,11 +49,11 @@ public function storeUser($fullname, $email, $password) {
         $stmt->store_result();
  
         if ($stmt->num_rows > 0) {
-            // user existed 
+            // user exists 
             $stmt->close();
             return true;
         } else {
-            // user not existed
+            // user does not exist
             $stmt->close();
             return false;
         }

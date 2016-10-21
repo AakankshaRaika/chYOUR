@@ -1,16 +1,15 @@
 <?php
-class DB_connect{
+
+class dbConnect{
 	private $conn;
 	
 	public function connect(){
 	
-	$this->conn = new mysqli_connect("127.0.0.1", "phpuser", "chyour2016");
-	
-	
-	return $this->conn;
+		//Open connection to database
+		$this->conn = new mysqli_connect("127.0.0.1", "phpuser", "chyour2016");
+		return $this->conn;
 	
 	}
-
 
 }
 ?>
