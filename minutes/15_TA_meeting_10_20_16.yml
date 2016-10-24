@@ -1,0 +1,22 @@
+date: October 20, 2016
+meeting_type: TA
+attendance: [aakanksh, alectuoh, alschmid, apillai, dnhickso, jrh7, yosephha]
+absent: [btgreen2]
+excused_absences: [bclee, vluo]
+task_progress: [
+  {ubit: aakanksh, progress: Front end, working on range / location},
+  {ubit: alectuoh, progress: Back end, working with php code},
+  {ubit: alschmid, progress: Back end, working with php code and Mysql queries},
+  {ubit: apillai, progress: Back end, working with sign-up activity and JSOn output},
+  {ubit: bclee, progress: absent},
+  {ubit: btgreen2, progress: absent},
+  {ubit: dnhickso, progress: Front end, working with location and Google API},
+  {ubit: jrh7, progress: Back end, researching SSL, working with Alec on php code, tweaking DB},
+  {ubit: vluo, progress: absent},
+  {ubit: yosephha, absent}
+  ]
+issues: []
+Notes:  |
+  Ruhan was worried about our server's ability to handle REST API requests (GET, POST, etc) but we advised that Apache and our php code is designed to handle such request from the android app.  We are able to contact the server via web browser, and pake GET and POST requests, but our php code is not quite to the point of handling said request at this time and we need to provide an adequate JSON file for it to receive and use upon the database.
+
+
