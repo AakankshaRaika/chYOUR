@@ -2,7 +2,7 @@ package Maping;
 
 /*
  * Skeleton code author : @aakanksh @yosephh 
- * Task onwers sprint 2 : Dom and Vivan 
+ * Task owners sprint 3 : Barry and Aakanksha
  */
 public class Google_Map {
 //Got the Google API 
