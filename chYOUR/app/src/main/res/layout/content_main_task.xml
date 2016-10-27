@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cse442.chyour.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:layout_alignParentEnd="false"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Task"
+            android:id="@+id/Taskbutton"
+            android:layout_weight="0.72"
+            android:textStyle="normal|bold|italic"
+            android:visibility="visible"
+            android:background="#518cbf" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MAP"
+            android:id="@+id/MAPbutton"
+            android:layout_weight="0.72"
+            android:textStyle="normal|bold|italic"
+            android:background="#518cbf" />
+
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="SETTINGS"
+            android:id="@+id/Settingbutton"
+            android:textStyle="normal|bold|italic"
+            android:singleLine="false"
+            android:background="#518cbf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:id="@+id/listView"
+            android:choiceMode="none"
+            android:background="#bfeaf4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:background="#e5f3fa">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/TaskName"
+            android:hint="New Task" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/TaskLocation"
+            android:layout_gravity="center_horizontal"
+            android:hint="Location" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TaskEndTime"
+                android:hint="End Time"
+                android:layout_weight="0.60" />
+
+            <EditText
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TaskStartTime"
+                android:hint="Start Time"
+                android:layout_gravity="left"
+                android:layout_weight="0.18" />
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/AddNewTask"
+            android:layout_gravity="center_horizontal"
+            android:background="#418a51" />
+    </LinearLayout>
+
+</RelativeLayout>
