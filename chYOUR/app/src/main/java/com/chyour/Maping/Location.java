@@ -1,20 +1,10 @@
-package Maping;
- 
-import chYOUR.app.src.main.java.com.example.dominiquehickson.chyourmap;
- 
-import chYOUR.Skeleton_Code.Features.Categories;
-import chYOUR.app.src.main.java.com.chyour.Add;
- 
-import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
- 
+package chYOUR.app.src.main.java.com.chyour.Maping;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
- 
+
 /**
  * Created by Aakanksha and Barry on 10/4/2016.
  */

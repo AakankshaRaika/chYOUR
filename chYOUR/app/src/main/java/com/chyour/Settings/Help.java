@@ -1,4 +1,4 @@
-package Settings;
+package chYOUR.app.src.main.java.com.chyour.Settings;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

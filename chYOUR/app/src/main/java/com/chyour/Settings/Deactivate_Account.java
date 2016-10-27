@@ -1,4 +1,4 @@
-package Settings;
+package chYOUR.app.src.main.java.com.chyour.Settings;
 /*
  * Skeleton code author : @aakanksh @yosephh 
  * Task owners Sprint 2 : Dom and Vivan 

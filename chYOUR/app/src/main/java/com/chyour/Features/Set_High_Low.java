@@ -1,4 +1,4 @@
-package Features;
+package chYOUR.app.src.main.java.com.chyour.Features;
 
 /*
  * Skeleton code author : @aakanksh @yosephh 

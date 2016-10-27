@@ -1,4 +1,4 @@
-package Maping;
+package chYOUR.app.src.main.java.com.chyour.Maping;
 
 /*
  * Skeleton code author : @aakanksh @yosephh 
