@@ -22,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.content_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        inputEmail = (EditText) findViewById(R.id.et_email);
+        inputEmail = (EditText) findViewById(R.id.et_username);
         inputPassword = (EditText) findViewById(R.id.et_password);
-        btn_login = (Button) findViewById(R.id.button_login);
-        btn_signup = (Button) findViewById(R.id.button_signup);
+        btn_login = (Button) findViewById(R.id.b_login);
+        btn_signup = (Button) findViewById(R.id.button);
 
 
         // Link to signup Screen
