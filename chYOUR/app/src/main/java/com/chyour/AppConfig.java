@@ -9,5 +9,5 @@ public class AppConfig {
     public static String URL_LOGIN = "http://128.205.44.23/chyour/login.php";
 
     // Server user register url
-    public static String URL_SIGNUP = "http://128.205.44.23/chyour/signup.php";
+    public static String URL_SIGNUP = "http://128.205.44.23/chyour/registration.php";
 }
