@@ -1,4 +1,4 @@
-package com.example.brian.chyourgui;
+package chyourgui;
 
 import android.app.Activity;
 import android.content.Intent;

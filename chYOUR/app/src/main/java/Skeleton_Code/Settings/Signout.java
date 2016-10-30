@@ -1,4 +1,4 @@
-package Settings;
+package Skeleton_Code.Settings;
 /*
  * Skeleton code author : @aakanksh @yosephh 
  * Task owners sprint 2 : Dom and Vivan 

@@ -1,4 +1,4 @@
-package Settings;
+package Skeleton_Code.Settings;
 /*
  * Skeleton code author : @aakanksh @yosephh 
  * Not assigned yet. (as off sprint 2) 
