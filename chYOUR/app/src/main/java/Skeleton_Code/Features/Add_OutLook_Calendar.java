@@ -1,4 +1,4 @@
-package Features;
+package Skeleton_Code.Features;
 /*
  * Skeleton code author : @aakanksh @yosephh 
  * Not assigned yet. (as off sprint 2) 

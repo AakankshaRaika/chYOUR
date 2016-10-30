@@ -1,4 +1,4 @@
-package Maping;
+package Skeleton_Code.Maping;
 
 /*
  * Skeleton code author : @aakanksh @yosephh 
