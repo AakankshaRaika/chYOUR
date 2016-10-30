@@ -7,120 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7409709d-16e7-4c80-b7f8-e08b713dcd8a" name="Default" comment="Removed Duplicated fixed manifest">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/chYOUR.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/animated_vector_drawable_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/appcompat_v7_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/design_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_analytics_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_analytics_impl_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_auth_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_auth_common_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_auth_module_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_common_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_config_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_crash_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_database_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_database_connection_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_iid_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_messaging_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_storage_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/firebase_storage_common_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/mediarouter_v7_24_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/palette_v7_24_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_ads_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_ads_lite_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_analytics_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_analytics_impl_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_appindexing_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_appinvite_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_auth_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_auth_base_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_awareness_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_base_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_basement_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_cast_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_cast_framework_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_clearcut_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_drive_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_fitness_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_games_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_gass_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_gcm_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_identity_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_iid_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_instantapps_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_location_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_maps_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_nearby_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_panorama_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_places_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_plus_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_safetynet_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_tagmanager_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_tagmanager_api_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_tasks_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_vision_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_wallet_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/play_services_wearable_9_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/recyclerview_v7_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_annotations_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_compat_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_core_ui_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_core_utils_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_fragment_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_media_compat_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_v4_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/libraries/support_vector_drawable_24_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/src/androidTest/java/com/chyour/ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chYOUR/app/src/androidTest/java/com/chyour/MapsActivity.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR.iml" afterPath="$PROJECT_DIR$/chYOUR.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/gradle.xml" afterPath="$PROJECT_DIR$/chYOUR/app/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/misc.xml" afterPath="$PROJECT_DIR$/chYOUR/app/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/modules.xml" afterPath="$PROJECT_DIR$/chYOUR/app/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/.idea/workspace.xml" afterPath="$PROJECT_DIR$/chYOUR/app/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/androidTest/java/chyourgui/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/androidTest/java/chyourgui/ExampleInstrumentedTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Google_Calendar.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Google_Calendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Members.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Members.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_OutLook_Calendar.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_OutLook_Calendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Phone_Calendar.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Phone_Calendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Categories.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Categories.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Common_Edit.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Common_Edit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Set_High_Low.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Set_High_Low.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Add_Range.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Add_Range.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Detour.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Detour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Google_Map.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Google_Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Location.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Deactivate_Account.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Deactivate_Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Help.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Help.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Notification_Settings.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Notification_Settings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Signout.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Signout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/taskListing/Add.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/taskListing/Add.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/taskListing/Delete_Edit.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/taskListing/Delete_Edit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/taskListing/View_Remove.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/taskListing/View_Remove.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/TaskManagement.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/TaskManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/addTasks.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/addTasks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/registration.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/registration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/signIn.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/signIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/tasks.java" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/tasks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_add_tasks.xml" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_add_tasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_registration.xml" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_registration.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_sign_in.xml" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_sign_in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_task_management.xml" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_task_management.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_tasks.xml" afterPath="$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_tasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="chYOUR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -168,17 +56,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chYOUR/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="120">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#524#542#0" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_add_tasks.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_add_tasks.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2596,9 +2505,9 @@
         <option value="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Categories.java" />
         <option value="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Location.java" />
         <option value="$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Help.java" />
+        <option value="$PROJECT_DIR$/chYOUR/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/chYOUR/app/src/androidTest/java/chyourgui/ExampleInstrumentedTest.java" />
         <option value="$PROJECT_DIR$/chYOUR/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/chYOUR/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2766,7 +2675,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2792,11 +2701,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="androidTest" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2822,7 +2735,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="androidTest" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Skeleton_Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chYOUR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chYOUR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chYOUR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Skeleton_Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Settings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chYOUR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chYOUR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chYOUR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -3314,15 +3299,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_add_tasks.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/build.gradle" />
     <entry file="file://$PROJECT_DIR$/build.gradle" />
     <entry file="file://$PROJECT_DIR$/chYOUR/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -3387,22 +3363,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chYOUR/app/app.iml" />
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/tasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/APIS/ReamMe">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3418,24 +3379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/registration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/addTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_tasks.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-275">
@@ -3448,14 +3391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Google_Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3526,14 +3461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Help.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Maping/Add_Range.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -3561,17 +3488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_add_tasks.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chYOUR/app/src/androidTest/java/com/chyour/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -3585,16 +3501,6 @@
         <state relative-caret-position="-255">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/androidTest/java/chyourgui/ExampleInstrumentedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3614,16 +3520,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/androidTest/java/chyourgui/ExampleInstrumentedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Features/Add_Google_Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/tasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/TaskManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/addTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/signIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/chyourgui/registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/res/layout/activity_add_tasks.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/java/Skeleton_Code/Settings/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chYOUR/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="120">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#524#542#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
