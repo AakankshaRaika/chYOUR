@@ -27,12 +27,12 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tasks);
+        setContentView(com.chyour.R.layout.activity_tasks);
 
         addTasks addTasks = new addTasks();
         List taskInfo = new ArrayList();
         taskInfo = addTasks.taskInfo;
-        LinearLayout layout = (LinearLayout) findViewById(R.id.layout);
+        LinearLayout layout = (LinearLayout) findViewById(com.chyour.R.id.layout);
 
         if(taskInfo.size() < 1){
             TextView tv = new TextView(this);
@@ -55,7 +55,7 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
             bt.setOnClickListener(this);
         }
 
-        bAddTask = (Button) findViewById(R.id.bAddTask);
+        bAddTask = (Button) findViewById(com.chyour.R.id.bAddTask);
         bAddTask.setOnClickListener(this);
 
     }
@@ -64,7 +64,7 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
 
-            case R.id.bAddTask:
+            case com.chyour.R.id.bAddTask:
                 startActivity(new Intent(this, addTasks.class));
                 break;
 

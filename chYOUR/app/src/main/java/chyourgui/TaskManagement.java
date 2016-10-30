@@ -19,8 +19,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import static com.example.brian.chyourgui.addTasks.taskInfo;
-import static com.example.brian.chyourgui.tasks.currentId;
+//import static com.example.brian.chyourgui.addTasks.taskInfo;
+//import static com.example.brian.chyourgui.tasks.currentId;
 
 public class TaskManagement extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,30 +30,30 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_management);
+        setContentView(com.chyour.R.layout.activity_task_management);
 
-        gpsVar =  (Button) findViewById(R.id.gpsVar);
-        toggleVar=  (Button) findViewById(R.id.toggleVar);
+        gpsVar =  (Button) findViewById(com.chyour.R.id.gpsVar);
+        toggleVar=  (Button) findViewById(com.chyour.R.id.toggleVar);
         gpsVar.setOnClickListener(this);
         toggleVar.setOnClickListener(this);
 
-        LinearLayout layout = (LinearLayout) findViewById(R.id.tmLayout);
+        LinearLayout layout = (LinearLayout) findViewById(com.chyour.R.id.tmLayout);
 
         TextView tv = new TextView(this);
         tv.setTextSize(15);
         tv.setGravity(Gravity.CENTER);
-        tv.setText(taskInfo.get(currentId).toString());
+//        tv.setText(taskInfo.get(currentId).toString());
         layout.addView(tv);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.gpsVar:
+            case com.chyour.R.id.gpsVar:
                 break;
 
-            case R.id.toggleVar:
-                taskInfo.remove(currentId);
+            case com.chyour.R.id.toggleVar:
+//                taskInfo.remove(currentId);
                 startActivity(new Intent(this, tasks.class));
                 break;
         }

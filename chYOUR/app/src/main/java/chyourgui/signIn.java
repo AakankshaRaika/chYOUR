@@ -23,12 +23,12 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(com.chyour.R.layout.activity_sign_in);
 
-        emailVar =  (EditText)findViewById(R.id.emailVar);
-        passwordVar =  (EditText)findViewById(R.id.passwordVar);
-        bSignIn =  (Button) findViewById(R.id.bSignIn);
-        bSignUp =  (Button) findViewById(R.id.bSignUp);
+        emailVar =  (EditText)findViewById(com.chyour.R.id.emailVar);
+        passwordVar =  (EditText)findViewById(com.chyour.R.id.passwordVar);
+        bSignIn =  (Button) findViewById(com.chyour.R.id.bSignIn);
+        bSignUp =  (Button) findViewById(com.chyour.R.id.bSignUp);
         bSignIn.setOnClickListener(this);
         bSignUp.setOnClickListener(this);
     }
@@ -36,7 +36,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.bSignIn:
+            case com.chyour.R.id.bSignIn:
                 registration registration = new registration();
                 Map<String, List<String>> map;
                 map = registration.map;
@@ -68,7 +68,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(this, tasks.class));
                 break;
 
-            case R.id.bSignUp:
+            case com.chyour.R.id.bSignUp:
                 startActivity(new Intent(this, registration.class));
                 break;
         }

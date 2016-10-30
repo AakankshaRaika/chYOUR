@@ -31,15 +31,15 @@ public class registration extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(com.chyour.R.layout.activity_registration);
 
-        fName =  (EditText)findViewById(R.id.fName);
-        lName =  (EditText)findViewById(R.id.lName);
-        passwordVar =  (EditText)findViewById(R.id.passwordVar);
-        confirmPasswordVar =  (EditText)findViewById(R.id.confirmPasswordVar);
-        emailVar =  (EditText)findViewById(R.id.emailVar);
-        bSignUp =  (Button) findViewById(R.id.bSignUp);
-        bGoBack =  (Button) findViewById(R.id.bGoBack);
+        fName =  (EditText)findViewById(com.chyour.R.id.fName);
+        lName =  (EditText)findViewById(com.chyour.R.id.lName);
+        passwordVar =  (EditText)findViewById(com.chyour.R.id.passwordVar);
+        confirmPasswordVar =  (EditText)findViewById(com.chyour.R.id.confirmPasswordVar);
+        emailVar =  (EditText)findViewById(com.chyour.R.id.emailVar);
+        bSignUp =  (Button) findViewById(com.chyour.R.id.bSignUp);
+        bGoBack =  (Button) findViewById(com.chyour.R.id.bGoBack);
         bSignUp.setOnClickListener(this);
         bGoBack.setOnClickListener(this);
     }
@@ -48,7 +48,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
 
-            case R.id.bSignUp:
+            case com.chyour.R.id.bSignUp:
                 List info = new ArrayList<>();
                 info.add(emailVar.getText().toString());
                 info.add(passwordVar.getText().toString());
@@ -111,7 +111,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
                 break;
 
 
-            case R.id.bGoBack:
+            case com.chyour.R.id.bGoBack:
                 startActivity(new Intent(this, signIn.class));
                 break;
         }

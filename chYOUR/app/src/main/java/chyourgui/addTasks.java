@@ -29,31 +29,31 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_tasks);
+        setContentView(com.chyour.R.layout.activity_add_tasks);
 
-        bAdd = (Button) findViewById(R.id.bAdd);
-        titleVar = (EditText)findViewById(R.id.titleVar);
-        descriptionVar = (EditText)findViewById(R.id.descriptionVar);
-        rangeVar = (EditText)findViewById(R.id.rangeVar);
+        bAdd = (Button) findViewById(com.chyour.R.id.bAdd);
+        titleVar = (EditText)findViewById(com.chyour.R.id.titleVar);
+        descriptionVar = (EditText)findViewById(com.chyour.R.id.descriptionVar);
+        rangeVar = (EditText)findViewById(com.chyour.R.id.rangeVar);
 
         bAdd.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Spinner spinner1 = (Spinner)findViewById(R.id.month);
+        Spinner spinner1 = (Spinner)findViewById(com.chyour.R.id.month);
         String month = spinner1.getSelectedItem().toString();
-        Spinner spinner2 = (Spinner)findViewById(R.id.day);
+        Spinner spinner2 = (Spinner)findViewById(com.chyour.R.id.day);
         String day = spinner2.getSelectedItem().toString();
-        Spinner spinner3 = (Spinner)findViewById(R.id.hour);
+        Spinner spinner3 = (Spinner)findViewById(com.chyour.R.id.hour);
         String hour = spinner3.getSelectedItem().toString();
-        Spinner spinner4 = (Spinner)findViewById(R.id.minute);
+        Spinner spinner4 = (Spinner)findViewById(com.chyour.R.id.minute);
         String minute = spinner4.getSelectedItem().toString();
-        Spinner spinner5 = (Spinner)findViewById(R.id.ampm);
+        Spinner spinner5 = (Spinner)findViewById(com.chyour.R.id.ampm);
         String ampm = spinner5.getSelectedItem().toString();
 
         switch (v.getId()) {
-            case R.id.bAdd:
+            case com.chyour.R.id.bAdd:
 
                 if(titleVar.getText().toString().length() < 1){
                     AlertDialog.Builder builder = new AlertDialog.Builder(addTasks.this);
@@ -81,8 +81,8 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                     break;
                 }
 
-                taskInfo.add(titleVar.getText().toString() +'\n'+ descriptionVar.getText().toString()+'\n'+"Range: "+rangeVar.getText().toString()+'\n'+
-                        "Due Date: "+month+"/"+day+'\n'+"Time Due: "+hour+":"+minute+" "+ampm);
+//                taskInfo.add(titleVar.getText().toString() +'\n'+ descriptionVar.getText().toString()+'\n'+"Range: "+rangeVar.getText().toString()+'\n'+
+//                        "Due Date: "+month+"/"+day+'\n'+"Time Due: "+hour+":"+minute+" "+ampm);
                 startActivity(new Intent(this, tasks.class));
                 break;
         }
