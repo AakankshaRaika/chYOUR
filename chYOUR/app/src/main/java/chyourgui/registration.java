@@ -1,14 +1,15 @@
 package chyourgui;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.chyour.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,24 +32,24 @@ public class registration extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.chyour.R.layout.activity_registration);
+        setContentView(R.layout.activity_registration);
 
-        fName =  (EditText)findViewById(com.chyour.R.id.fName);
-        lName =  (EditText)findViewById(com.chyour.R.id.lName);
-        passwordVar =  (EditText)findViewById(com.chyour.R.id.passwordVar);
-        confirmPasswordVar =  (EditText)findViewById(com.chyour.R.id.confirmPasswordVar);
-        emailVar =  (EditText)findViewById(com.chyour.R.id.emailVar);
-        bSignUp =  (Button) findViewById(com.chyour.R.id.bSignUp);
-        bGoBack =  (Button) findViewById(com.chyour.R.id.bGoBack);
+        fName = (EditText) findViewById(R.id.fName);
+        lName = (EditText) findViewById(R.id.lName);
+        passwordVar = (EditText) findViewById(R.id.passwordVar);
+        confirmPasswordVar = (EditText) findViewById(R.id.confirmPasswordVar);
+        emailVar = (EditText) findViewById(R.id.emailVar);
+        bSignUp = (Button) findViewById(R.id.bSignUp);
+        bGoBack = (Button) findViewById(R.id.bGoBack);
         bSignUp.setOnClickListener(this);
         bGoBack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
 
-            case com.chyour.R.id.bSignUp:
+            case R.id.bSignUp:
                 List info = new ArrayList<>();
                 info.add(emailVar.getText().toString());
                 info.add(passwordVar.getText().toString());
@@ -56,7 +57,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
                 info.add(lName.getText().toString());
                 info.add(confirmPasswordVar.getText().toString());
 
-                if(fName.getText().toString().length() < 1){
+                if (fName.getText().toString().length() < 1) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(registration.this);
                     builder.setTitle("Alert");
                     builder.setMessage("All Fields not Filled in");
@@ -64,7 +65,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
                     alertDialog.show();
                     break;
                 }
-                if(lName.getText().toString().length() < 1){
+                if (lName.getText().toString().length() < 1) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(registration.this);
                     builder.setTitle("Alert");
                     builder.setMessage("All Fields not Filled in");
@@ -73,15 +74,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
                     break;
                 }
 
-                if(emailVar.getText().toString().length() < 1){
-                    AlertDialog.Builder builder = new AlertDialog.Builder(registration.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("All Fields not Filled in");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                    }
-                if(passwordVar.getText().toString().length() < 1){
+                if (emailVar.getText().toString().length() < 1) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(registration.this);
                     builder.setTitle("Alert");
                     builder.setMessage("All Fields not Filled in");
@@ -89,7 +82,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
                     alertDialog.show();
                     break;
                 }
-                if(confirmPasswordVar.getText().toString().length() < 1){
+                if (passwordVar.getText().toString().length() < 1) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(registration.this);
                     builder.setTitle("Alert");
                     builder.setMessage("All Fields not Filled in");
@@ -97,7 +90,15 @@ public class registration extends AppCompatActivity implements View.OnClickListe
                     alertDialog.show();
                     break;
                 }
-                if(passwordVar.getText().toString().equals(confirmPasswordVar.getText().toString()) == false){
+                if (confirmPasswordVar.getText().toString().length() < 1) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(registration.this);
+                    builder.setTitle("Alert");
+                    builder.setMessage("All Fields not Filled in");
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                    break;
+                }
+                if (passwordVar.getText().toString().equals(confirmPasswordVar.getText().toString()) == false) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(registration.this);
                     builder.setTitle("Alert");
                     builder.setMessage("Passwords are not the Same");
@@ -111,7 +112,7 @@ public class registration extends AppCompatActivity implements View.OnClickListe
                 break;
 
 
-            case com.chyour.R.id.bGoBack:
+            case R.id.bGoBack:
                 startActivity(new Intent(this, signIn.class));
                 break;
         }
