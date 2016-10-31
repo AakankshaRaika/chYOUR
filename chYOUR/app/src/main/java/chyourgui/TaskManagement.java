@@ -1,48 +1,59 @@
-package com.example.brian.chyourgui;
+package chyourgui;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.StringTokenizer;
+import com.chyour.MapsActivity;
+import com.chyour.R;
+import com.chyour.addTasks;
 
-import static com.example.brian.chyourgui.addTasks.taskInfo;
-import static com.example.brian.chyourgui.tasks.currentId;
+import static chyourgui.tasks.currentId;
+import static chyourgui.tasks.taskMap;
+
 
 public class TaskManagement extends AppCompatActivity implements View.OnClickListener {
 
+    public static int editClicked;
     Button gpsVar;
     Button toggleVar;
+    Button bEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_management);
 
-        gpsVar =  (Button) findViewById(R.id.gpsVar);
-        toggleVar=  (Button) findViewById(R.id.toggleVar);
+        gpsVar = (Button) findViewById(R.id.gpsVar);
+        bEdit = (Button) findViewById(R.id.bEdit);
+        toggleVar = (Button) findViewById(R.id.toggleVar);
         gpsVar.setOnClickListener(this);
+        bEdit.setOnClickListener(this);
         toggleVar.setOnClickListener(this);
 
         LinearLayout layout = (LinearLayout) findViewById(R.id.tmLayout);
 
+
         TextView tv = new TextView(this);
         tv.setTextSize(15);
         tv.setGravity(Gravity.CENTER);
-        tv.setText(taskInfo.get(currentId).toString());
+        String temp = new String();
+
+        temp = "Title: " + taskMap.get(currentId).get(0) + '\n';
+        temp += "Description: " + taskMap.get(currentId).get(1) + '\n';
+        temp += "Range: " + taskMap.get(currentId).get(2) + '\n';
+        temp += "Location: " + taskMap.get(currentId).get(3) + '\n';
+        temp += "Due Date: " + taskMap.get(currentId).get(4)
+                + "/" + taskMap.get(currentId).get(5) + " "
+                + taskMap.get(currentId).get(6) + ":" + taskMap.get(currentId).get(7)
+                + taskMap.get(currentId).get(8);
+
+        tv.setText(temp);
         layout.addView(tv);
     }
 
@@ -50,12 +61,19 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.gpsVar:
+                startActivity(new Intent(this, MapsActivity.class));
                 break;
 
             case R.id.toggleVar:
-                taskInfo.remove(currentId);
+                taskMap.remove(currentId);
                 startActivity(new Intent(this, tasks.class));
                 break;
+
+            case R.id.bEdit:
+                editClicked = 1;
+                startActivity(new Intent(this, addTasks.class));
+                break;
+
         }
     }
 }
