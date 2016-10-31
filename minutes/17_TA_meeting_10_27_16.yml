@@ -1,0 +1,22 @@
+date: October 27, 2016
+meeting_type: TA
+attendance: [aakanksh,  alectuoh, alschmid, apillai, bclee, btgreen2, dnhickso, jrh7, alectuoh, yosephha]
+absent: []
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: Location / places API android, play services... issue with android studio and gradle slowing them down},
+  {ubit: alectuoh, progress: PHP for signup finished, assisting Ash + Yoseph},
+  {ubit: alschmid, progress: Working on php for tasks, assisting Vivian},
+  {ubit: apillai, progress: Connecting login input to php script in progress},
+  {ubit: bclee, progress: Location / places API android, play services... issue with android studio and gradle slowing them down},
+  {ubit: btgreen2, progress: Working on gui and local data structure for stoing user info},
+  {ubit: dnhickso, progress: Location research and implementatio},
+  {ubit: jrh7, progress: SSL research underway, assisting with php},
+  {ubit: vluo, progress: Working with login process},
+  {ubit: yosephha, Sending data to php file, no errors, but not properly acting}
+  ]
+issues: [Team A still having issues getting the project to function correctly.]
+Notes:  |
+  Ruhan advised we create basic php for query to get data from DB - temporary to demonstrate get function (query if a user exist or return list of all users, though our current php code does dempnstrate the function properly. We have been able to send args via http and insert / query data from the database successully.  Advised we must have a functioning projec to receive credit for the associated parts of sprint 3.
+
+
