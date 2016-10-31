@@ -1,0 +1,20 @@
+date: October 17, 2016
+meeting_type: Team
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, jrh7, vluo]
+absent: [btgreen2]
+excused_absences: [dnhickso, yosephha]
+task_progress: [
+  {ubit: aakanksh, progress: Front end, working on range / location},
+  {ubit: alectuoh, progress: Back end, working with php code},
+  {ubit: alschmid, progress: Back end, working with php code and Mysql queries},
+  {ubit: apillai, progress: Back end, working with sign-up activity and JSOn output},
+  {ubit: bclee, progress: Front end, working with google maps API},
+  {ubit: btgreen2, progress: absent},
+  {ubit: dnhickso, progress: absent},
+  {ubit: jrh7, progress: Back end, researching SSL, working with Alec on php code, tweaking DB},
+  {ubit: vluo, progress: Back end, working on log-in activity},
+  {ubit: yosephha, absent}
+  ]
+issues: []
+Notes:  |
+  Impending clean up of github repo and branching discussed, as well as proper branching syntax and methodology.  Sub-teams will be meeting this week separately to divide and assign tasks for sprint 3.  
