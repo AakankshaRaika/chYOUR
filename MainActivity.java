@@ -1,3 +1,9 @@
+//The main activity I have submitted should be used with the Person.java class, Android Manifest, buildgradle and activity_main.xml.....
+//...I have uploaded.
+//To learn how to send http post request I have used online sources so if you guys need help with Post requests or using volley look at online resouces.
+//Since we only have some functionality in gui as of now and no compleate front end java classes there might need to be some imports needed.
+
+
 package com.hmkcode.android;
 
 import java.io.BufferedReader;
