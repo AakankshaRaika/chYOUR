@@ -1,24 +1,23 @@
 <?php
 if($_POST)
 {
-$host="localhost";
-$user="id11983_root";
+$host="127.0.0.1";
+$user="phpuser";
 $pass="chyour2016";
-$db="id11983_chyourdb";
+$db="chyourdb";
 	$username=$_POST['username'};
-$password=$_POST['password'];
-$conn=mysqli_connect($host,$user,$pass,$db);
-	$query="SELECT * from userstbl where username='$username' and password='$password'";
+	$password=$_POST['password'];
+	$conn=mysqli_connect($host,$user,$pass);
+	$query="SELECT * from userstbl where email='$email' and password='$password'";
 	$result=mysqli_query($conn, $query);
+
 	if(mysqli_num_rows($result)==1)
 	{
 		session_start();
-		$_SESSION['id11983_chyourdb']='true';
+		$_SESSION['chyourdb']='true';
 		header('location:index.php');
 	}
 	else {echo 'wrong username or password';}
-
-
 }
 ?>
 
