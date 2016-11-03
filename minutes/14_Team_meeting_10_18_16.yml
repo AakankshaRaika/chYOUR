@@ -1,0 +1,60 @@
+date: October 18, 2016
+meeting_type: Team (Subteam)
+attendance: [alectuoh, alschmid, jrh7, vluo, yosephha]
+absent: []
+excused_absences: [aakanksh, apillai, bclee, btgreen2, dnhickso]
+task_progress: [
+  {ubit: aakanksh, progress: Front end, working on range / location},
+  {ubit: alectuoh, progress: Back end, working with php code},
+  {ubit: alschmid, progress: Back end, working with php code and Mysql queries},
+  {ubit: apillai, progress: Back end, working with sign-up activity and JSOn output},
+  {ubit: bclee, progress: Front end, working with google maps API},
+  {ubit: btgreen2, progress: absent},
+  {ubit: dnhickso, progress: absent},
+  {ubit: jrh7, progress: Back end, researching SSL, working with Alec on php code, tweaking DB},
+  {ubit: vluo, progress: Back end, working on log-in activity},
+  {ubit: yosephha, absent}
+  ]
+issues: []
+Notes:  |
+  Repo has been cleaned up, goals and tasks discussed for sprint 3, broken down as follows:
+
+Remaining Tasks:
+
+Server:
+	SSL research & implementation
+
+Database: 
+	Queries (sign in, sign up)
+	Foreign key in task table
+
+Sign-up:
+	App - Take input, package in JSON
+	App - Send JSON to server
+	Server - Check if user exists
+		If Yes, advise sign in
+		If no, insert user into table
+	Server - Return success or failure with advise to app
+	App - Receive JSON from server
+	App - If successful, sign in and send to tasks, If failure advise user
+
+Sign-in:
+	App - Take input, package in JSON
+	App - Send JSON to server
+	Server - Check if user exists
+		If so, check password
+			If good, return successful
+			If bad, return incorrect password
+		If not, return bad username to app
+	Server - return results back to app	
+	App - If success move to task page
+	App - If failure notify user (bad username / password)
+
+Jason - SSL research and implementation, finish DB structure
+Ash - Generate JSON --> Server
+Vivian - Log in stuff
+Yoseph - With Alec, Signup activity --> JSON
+Alec - PHP Tuning, With Yoseph, JSON Transfer
+Andrea - Queries, Generate JSON from activity 
+
+

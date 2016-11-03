@@ -1,0 +1,22 @@
+date: October 24, 2016
+meeting_type: Team
+attendance: [aakanksh,  alschmid, apillai, bclee, btgreen2, dnhickso, jrh7, yosephha]
+absent: [alectuoh, vluo]
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: Location / places API android, play services... issue with android studio and gradle slowing them down},
+  {ubit: alectuoh, progress: absent},
+  {ubit: alschmid, progress: Working on php for tasks},
+  {ubit: apillai, progress: Connecting login input to php script in progress},
+  {ubit: bclee, progress: Location / places API android, play services... issue with android studio and gradle slowing them down},
+  {ubit: btgreen2, progress: Working on gui and local data structure for stoing user info},
+  {ubit: dnhickso, progress: Location research and implementatio},
+  {ubit: jrh7, progress: SSL research underway, assisting with php},
+  {ubit: vluo, progress: absent},
+  {ubit: yosephha, Sending data to php file, no errors, but not properly acting}
+  ]
+issues: []
+Notes:  |
+  General meeting to get everyone up to speed with eachother and plan out the race to the end of sprint 3 on monday.  Per Slack, it seems that SSL certs have been ordered by Jesse for each of the servers so we will hold on any further SSL implementation / research for now until things are clearer.  We must focus on completing the sign up / sign in functions from app side to back end.
+
+

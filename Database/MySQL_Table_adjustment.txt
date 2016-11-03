@@ -1,0 +1,5 @@
+ALTER TABLE `usersTBL`
+  DROP `userName`,
+  DROP `lastName`;
+
+ALTER TABLE `usersTBL` CHANGE `firstName` `fullname` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
