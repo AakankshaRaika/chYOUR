@@ -79,6 +79,26 @@ class dbFunctions {
             		return false;
         	}
     	}
+
+	public function checkUser($email, $password){
+
+		$stmt = $this->conn->prepare("SELECT * FROM usersTBL WHERE email = ?");
+		$stmt->bind_param("s". $email);
+
+		if($stmt->execute()){
+			$user = $stmt->get_result()->fetch_assoc();
+			$stmt->close(); 
+			
+			$pass = $user['password'];
+			if($pass == $password){
+				return $user;
+			}
+		} else {
+			return NULL;
+		}
+	}
+		
+				
 }
 
 ?>
