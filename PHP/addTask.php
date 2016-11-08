@@ -1,22 +1,29 @@
 <?php
-
-public function addTask($description, $address, $latitude, $longitude) {
-        	//$uuid = uniqid('', true);
  
-	        $stmt = $this->conn->prepare("INSERT INTO tasksTBL(description, address, latitude, londitude) VALUES(?, ?, ?, ?)");
-        	$stmt->bind_param('sss',/* $uuid,*/ $description, $address, $latitude, $longitude);
-        	$result = $stmt->execute();
-        	$stmt->close();
-		 
-	        // Check for successful store
-        	if ($result) {
-            		$stmt = $this->conn->prepare("SELECT * FROM tasksTBL WHERE description = ?");
-            		$stmt->bind_param('s', $description;
-            		$stmt->execute();
-            		$user = $stmt->get_result()->fetch_assoc();
-            		$stmt->close();
-			return $description;
-        	} else {
-            		return false;
-        	}
-	}
+require_once 'include/dbFunctions.php';
+$db = new dbFunctions();
+ 
+// json response array
+$response = array("error" => FALSE);
+
+if (isset($_GET['userID']) &&isset($_GET['description']) && isset($_GET['date']) && isset($_GET['address']) && isset($_GET['latitude']) && isset($_GET['longitude']) ) {
+    
+    // receiving the post params
+    $uid = $_GET['userID'];
+    $desc = $_GET['description'];
+    $date = $_GET['date'];
+    $addr = $_GET['address'];
+    $lat = $_GET['latitude'];
+    $long = $_GET['longitude'];
+
+    //store
+
+    $stmt = $this->conn->prepare("INSERT INTO tasksTBL(userID, description, date, address, latitude, longitude) VALUES(?,?, ?, ?, ?, ?)");
+            $stmt->bind_param('isisii',/* $uuid,*/ $uid, $desc, $date, $addr, $lat, $long);
+            $result = $stmt->execute();
+            $stmt->close();
+            
+
+}
+
+?>
