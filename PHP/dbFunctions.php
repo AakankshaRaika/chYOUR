@@ -84,8 +84,8 @@ class dbFunctions {
 
 		$stmt = $this->conn->prepare("SELECT * FROM usersTBL WHERE email = ?");
 		$stmt->bind_param("s". $email);
-
-		if($stmt->execute()){
+		$result = $stmt->execute();
+		if($result){
 			$user = $stmt->get_result()->fetch_assoc();
 			$stmt->close(); 
 			
@@ -97,7 +97,6 @@ class dbFunctions {
 			return NULL;
 		}
 	}
-		
 				
 }
 
