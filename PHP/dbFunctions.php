@@ -97,6 +97,14 @@ class dbFunctions {
 			return NULL;
 		}
 	}
+
+	public function badEmail($email){
+
+                if(strpos($email, '@') == false || strpos($email, '.') == false){
+                        return true;
+                }
+
+        }
 				
 }
 
