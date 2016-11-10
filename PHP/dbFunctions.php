@@ -105,6 +105,15 @@ class dbFunctions {
                 }
 
         }
+        
+    public function addTask($uid, $desc, $datee, $addr, $lat, $long) {
+			
+			$stmt = $this->conn->prepare("INSERT INTO tasksTBL(userID, description, date, address, latitude, longitude)
+			 VALUES(?,?, ?, ?, ?, ?)");
+            $stmt->bind_param('isisii', $uid, $desc, $datee, $addr, $lat, $long);
+            $result = $stmt->execute();
+            $stmt->close();
+	}
 				
 }
 
