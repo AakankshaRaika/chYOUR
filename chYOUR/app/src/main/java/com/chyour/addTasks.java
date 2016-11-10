@@ -24,6 +24,7 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
 
     static int code;
     Button bAdd;
+    Button bGoBack4;
     EditText titleVar;
     EditText descriptionVar;
     EditText rangeVar;
@@ -40,11 +41,14 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_add_tasks);
 
         bAdd = (Button) findViewById(R.id.bAdd);
+        bGoBack4 = (Button) findViewById(R.id.bGoBack4);
+
         titleVar = (EditText) findViewById(R.id.titleVar);
         descriptionVar = (EditText) findViewById(R.id.descriptionVar);
         rangeVar = (EditText) findViewById(R.id.rangeVar);
         locationVar = (EditText) findViewById(R.id.locationVar);
         bAdd.setOnClickListener(this);
+        bGoBack4.setOnClickListener(this);
         spinner1 = (Spinner) findViewById(R.id.month);
         spinner2 = (Spinner) findViewById(R.id.day);
         spinner3 = (Spinner) findViewById(R.id.hour);
@@ -94,6 +98,12 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
         String ampm = spinner5.getSelectedItem().toString();
 
         switch (v.getId()) {
+
+
+            case R.id.bGoBack4:
+                startActivity(new Intent(this, tasks.class));
+                break;
+
 
             case R.id.bAdd:
 

@@ -122,6 +122,18 @@
         <Button android:id="@+id/bAdd" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text=" Add to Tasks" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="go back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bGoBack4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="12sp" />
+
     </LinearLayout>
 
 </RelativeLayout>
