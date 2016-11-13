@@ -33,7 +33,7 @@ public class SignupActivity extends Activity {
 
     private EditText inputFullName;
     private EditText inputEmail;
-    private EditText inputPassword;
+    static EditText inputPassword;  //change to static so i can access from account management page for sake of testing - Brian
     private SessionManager session;
     private SQLiteHandler db;
 

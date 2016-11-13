@@ -124,14 +124,7 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                     break;
                 }
 
-                if (rangeVar.getText().toString().length() < 1) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(addTasks.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("All Fields not Filled in");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
+
 
                 List list = new ArrayList<>();
                 list.add(titleVar.getText().toString());

@@ -18,6 +18,7 @@ import static com.chyour.R.styleable.MenuItem;
 
 public class settings extends AppCompatActivity implements View.OnClickListener {
 
+    static int notifications = 1;
     Button bSignOut;
     Button bNotifications;
     Button bManageAccount;
@@ -46,10 +47,17 @@ public class settings extends AppCompatActivity implements View.OnClickListener 
                 break;
 
             case R.id.bNotifications:
+                if(notifications == 1){
+                notifications = 0;
+            }
+                else{
+                    notifications = 1;
+                }
+
                 break;
 
             case R.id.bManageAccount:
-                startActivity(new Intent(this, addTasks.class));
+                startActivity(new Intent(this, accountManagement.class));
                 break;
 
             case R.id.bGoBack2:
