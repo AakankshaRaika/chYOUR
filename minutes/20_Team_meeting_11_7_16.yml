@@ -1,8 +1,8 @@
 date: November 7, 2016
 meeting_type: Team
 attendance: [aakanksh, alschmid, apillai, btgreen2, jrh7, vluo, yosephha]
-absent: [alectuoh, bclee, dnhickso]
-excused_absences: []
+absent: [alectuoh, bclee]
+excused_absences: [dnhickso]
 task_progress: [
   {ubit: aakanksh, progress: API - map, will finish soon},
   {ubit: alectuoh, progress: absent},
