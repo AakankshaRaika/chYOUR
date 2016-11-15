@@ -112,7 +112,8 @@ class dbFunctions {
 			 VALUES(?,?, ?, ?, ?, ?)");
             $stmt->bind_param('isisii', $uid, $desc, $datee, $addr, $lat, $long);
             $result = $stmt->execute();
-            $stmt->close();
+            $stmt->close(); 
+        
 	}
 				
 }
