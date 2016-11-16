@@ -115,6 +115,24 @@ class dbFunctions {
             $stmt->close(); 
         
 	}
+
+	public function deleteUser($uid){
+
+                $stmt = $this->conn->prepare("DELETE FROM usersTBL WHERE userID = ?");
+                $stmt->bind_param('i', $uid);
+                $result = $stmt->execute();
+
+
+                $stmt->close();
+
+                if($result){
+                        return true;
+                } else {
+                        return false;
+                }
+
+        }
+
 				
 }
 
