@@ -2,120 +2,138 @@
 
 class dbFunctions {
  
-        private $conn;
+    	private $conn;
 
-    // Constructor
+	// Constructor
 
-        function __construct() {
-        $username = "phpuser";
-        $password = "chyour2016";
-            $database = "chyourDB";
-        $server = "127.0.0.1";
+    	function __construct() {
+		$username = "phpuser";
+   		$password = "chyour2016";
+    		$database = "chyourDB";
+		$server = "127.0.0.1";
 
-        $this->conn = mysqli_connect($server,$username,$password);
-        $db_found = mysqli_select_db($this->conn,$database);
-        }
-        
-    // Testing code
+		$this->conn = mysqli_connect($server,$username,$password);
+		$db_found = mysqli_select_db($this->conn,$database);
+    	}
+    	
+    	// Destructor
 
-    /*if($db_found){
-            print "Database Found!!";
-            mysqli_close($conn);
-        }else{
-            print "Database not found!!!";
-        }
-        
-        require_once 'dbConnect.php';
-        // connecting to database
-        $db = new dbConnect();
-        $this->conn = $db->connect();
-        */
+    	function __destruct() {
+    	
+	}
+
+	// Attempt to store user in database
     
-        // Destructor
-
-        function __destruct() {
-        
-    }
-
-    // Attempt to store user in database
-    
-    public function storeUser($fullname, $email, $password) {
-            //$uuid = uniqid('', true);
+	public function storeUser($fullname, $email, $password, $verified) {
+        	//$uuid = uniqid('', true);
  
-            $stmt = $this->conn->prepare("INSERT INTO usersTBL(fullname, email, password) VALUES(?, ?, ?)");
-            $stmt->bind_param('sss',/* $uuid,*/ $fullname, $email, $password);
-            $result = $stmt->execute();
-            $stmt->close();
-         
-            // Check for successful store
+	        $stmt = $this->conn->prepare("INSERT INTO usersTBL(fullname, email, password, verified) VALUES(?, ?, ?, ?)");
+        	$stmt->bind_param('sssi', $fullname, $email, $password, $verified);
+        	$result = $stmt->execute();
+        	$stmt->close();
+		 
+	        // Check for successful store
 
-            if ($result) {
-                    $stmt = $this->conn->prepare("SELECT * FROM usersTBL WHERE email = ?");
-                    $stmt->bind_param('s', $email);
-                    $stmt->execute();
-                    $user = $stmt->get_result()->fetch_assoc();
-                    $stmt->close();
-            return $user;
-            } else {
-                    return false;
-            }
-    }
+        	if ($result) {
+            		$stmt = $this->conn->prepare("SELECT * FROM usersTBL WHERE email = ?");
+            		$stmt->bind_param('s', $email);
+            		$stmt->execute();
+            		$user = $stmt->get_result()->fetch_assoc();
+            		$stmt->close();
+			return $user;
+        	} else {
+            		return false;
+        	}
+	}
      
-    // Check if user exists
+	// Check if user exists
      
-    public function userExists($email) {
-            $stmt = $this->conn->prepare("SELECT email from usersTBL WHERE email = ?");
-            $stmt->bind_param("s", $email);
-            $stmt->execute();
-            $stmt->store_result();
+	public function userExists($email) {
+	        $stmt = $this->conn->prepare("SELECT email from usersTBL WHERE email = ?");
+        	$stmt->bind_param("s", $email);
+	        $stmt->execute();
+	        $stmt->store_result();
  
-            if ($stmt->num_rows > 0) {
-                    // user exists 
-                    $stmt->close();
-                    return true;
-            } else {
-                // user does not exist
-                    $stmt->close();
-                    return false;
-            }
-        }
+        	if ($stmt->num_rows > 0) {
+            		// user exists 
+            		$stmt->close();
+            		return true;
+        	} else {
+         	   	// user does not exist
+            		$stmt->close();
+            		return false;
+        	}
+    	}
 
-    public function checkUser($email, $password){
+	public function checkUser($email, $password){
 
-        $stmt = $this->conn->prepare("SELECT * FROM usersTBL WHERE email = ?");
-        $stmt->bind_param("s". $email);
-        $result = $stmt->execute();
-        if($result){
-            $user = $stmt->get_result()->fetch_assoc();
-            $stmt->close(); 
-            
-            $pass = $user['password'];
-            if($pass == $password){
-                return $user;
-            }
-        } else {
-            return NULL;
-        }
-    }
+		$stmt = $this->conn->prepare("SELECT * FROM usersTBL WHERE email = ?");
+		$stmt->bind_param("s", $email);
 
-    public function badEmail($email){
+		$result = $stmt->execute();
+		if($result){
+			$user = $stmt->get_result()->fetch_assoc();
 
-                if(strpos($email, '@') == false || strpos($email, '.') == false){
-                        return true;
-                }
+			$stmt->close();
+			
+			$pass = $user['password'];
+			if($pass == $password){
+				return $user;
+			}
+		} else {
+			return NULL;
+		}	
+	}
+	
+	public function badEmail($email){
+		
+		if(strpos($email, '@') == false || strpos($email, '.') == false){
+			return true;
+		}
 
-        }
-        
-    public function addTask($uid, $desc, $datee, $addr, $lat, $long) {
-            
-            $stmt = $this->conn->prepare("INSERT INTO tasksTBL(userID, description, date, address, latitude, longitude)
-             VALUES(?,?, ?, ?, ?, ?)");
+	}
+	
+	public function addTask($uid, $desc, $datee, $addr, $lat, $long) {
+			
+			$stmt = $this->conn->prepare("INSERT INTO tasksTBL(userID, description, date, address, latitude, longitude)
+			 VALUES(?,?, ?, ?, ?, ?)");
             $stmt->bind_param('isisii', $uid, $desc, $datee, $addr, $lat, $long);
             $result = $stmt->execute();
-            $stmt->close(); 
-        
-    }
-                
+            $stmt->close();
+	}
+
+	public function deleteUser($uid){
+	
+		$stmt = $this->conn->prepare("DELETE FROM usersTBL WHERE userID = ?");
+		$stmt->bind_param('i', $uid);
+		$result = $stmt->execute();	
+		$stmt->close();
+		
+		if($result){ 
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+	
+	// Function to verify user in Database - Jason
+
+	public function verify($uid){
+	
+	        $stmt = $this->conn->prepare("UPDATE usersTBL set verified='1' WHERE userID = ?");
+        	$stmt->bind_param("i", $uid);
+	        $result = $stmt->execute();
+	        $stmt->close();
+
+		if($result){ 
+			return true;
+		} else {
+			return false;
+		}
+ 
+	}
+	
 }
 
 ?>
