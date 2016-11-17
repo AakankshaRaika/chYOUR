@@ -163,8 +163,8 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                     break;
                 } else {
                     date = 110101;
-                    registerTask(userId, descriptionVar.getText().toString(), date,
-                            locationVar.getText().toString(), lattitude, longtiude);
+                    registerTask(userId, titleVar.getText().toString() , descriptionVar.getText().toString(),
+                            date, locationVar.getText().toString(),rangeVar.getText().toString(), lattitude, longtiude);
 
                     taskMap.put(code += 1, list);
                     startActivity(new Intent(this, tasks.class));
@@ -175,8 +175,8 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
     }
 
 
-    private void registerTask(final int userId, final String descriptionVar, final int date,
-                              final String locationVar, final int lattitude, final int longtiude) {
+    private void registerTask(final int userId, final String title ,final String descriptionVar, final int date,
+                              final String locationVar,final String range, final int lattitude, final int longtiude) {
 
         Uri.Builder builder = new Uri.Builder();
         builder.scheme("http")
@@ -184,9 +184,11 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                 .appendPath("chyour")
                 .appendPath("addTask.php")
                 .appendQueryParameter("userID", String.valueOf(userId))
+                .appendQueryParameter("taskTitle", title)
                 .appendQueryParameter("description", descriptionVar)
                 .appendQueryParameter("date", String.valueOf(date))
                 .appendQueryParameter("address", locationVar)
+                .appendQueryParameter("taskRange", String.valueOf(range))
                 .appendQueryParameter("latitude", String.valueOf(lattitude))
                 .appendQueryParameter("longitude", String.valueOf(longtiude));
 
