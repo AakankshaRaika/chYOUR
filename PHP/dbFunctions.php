@@ -93,13 +93,17 @@ class dbFunctions {
 
 	}
 	
-	public function addTask($uid, $desc, $datee, $addr, $lat, $long) {
+	public function addTask($uid, $title, $desc, $datee, $addr, $range,  $lat, $long) {
 			
-			$stmt = $this->conn->prepare("INSERT INTO tasksTBL(userID, description, date, address, latitude, longitude)
-			 VALUES(?,?, ?, ?, ?, ?)");
-            $stmt->bind_param('isisii', $uid, $desc, $datee, $addr, $lat, $long);
+	    $stmt = $this->conn->prepare("INSERT INTO tasksTBL(userID, taskTitle, description, date, address, taskRange, latitude, longitude)
+			 VALUES(?,?,?,?,?,?,?,?)");
+            $stmt->bind_param('issssiii', $uid, $title, $desc, $datee, $addr, $range, $lat, $long);
             $result = $stmt->execute();
             $stmt->close();
+	    
+	    if($result){
+		echo json_encode('Succesfully stored task');
+	    }
 	}
 
 	public function deleteUser($uid){
