@@ -1,0 +1,21 @@
+date: November 17, 2016
+meeting_type: TA
+attendance: [aakanksh, alectuoh, alschmid, bclee, jrh7, vluo, yosephha]
+absent: [apillai, btgreen2]
+excused_absences: [dnhickso]
+task_progress: [
+  {ubit: aakanksh, progress: Issue with getMap(), still working on API},
+  {ubit: alectuoh, progress: Login php finished, able to verify email address format},
+  {ubit: alschmid, progress: Sync tasks ok},
+  {ubit: apillai, progress: Absent - working hashing, logout},
+  {ubit: bclee, progress: API stuff, issue rendering map on test phones},
+  {ubit: btgreen2, progress: Absent, working on settings},
+  {ubit: dnhickso, progress: Absent, working on categories},
+  {ubit: jrh7, progress: Email Verification up and running, maybe polish it a bit?},
+  {ubit: vluo, progress: Receiving login response in progress, need to test, working with ash},
+  {ubit: yosephha, progress: Task syncing ok}
+  ]
+issues: []
+Notes:  |
+Ruhan pleased with current progress, requests everyone finish with tasks before Saturday in case of issues.  
+
