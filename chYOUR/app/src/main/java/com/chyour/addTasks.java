@@ -9,7 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -136,6 +140,8 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                 list.add(hour);
                 list.add(minute);
                 list.add(ampm);
+
+
 
                 if (editClicked == 1) {
                     taskMap.put(code, list);
