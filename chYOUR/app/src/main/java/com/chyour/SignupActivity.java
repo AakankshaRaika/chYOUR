@@ -75,10 +75,6 @@ public class SignupActivity extends Activity {
                 url = "http://128.205.44.23/chyour/registration.php?fullname="
                         +name+"&email="+ email+"&password="+password;
 
-                Toast.makeText(getApplicationContext(),
-                        "signing in...", Toast.LENGTH_LONG)
-                        .show();
-
                 if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
                     registerUser(name, email, password);
 

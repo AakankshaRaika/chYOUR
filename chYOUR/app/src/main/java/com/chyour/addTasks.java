@@ -1,14 +1,22 @@
 package com.chyour;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +41,15 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
     Spinner spinner3;
     Spinner spinner4;
     Spinner spinner5;
+    private static final String TAG = addTasks.class.getSimpleName();
+    String tag_string_req = "uploadTaskList";
+
+    // default place holders
+    private int longtiude = 1234,
+            lattitude = 1234,
+            userId = 0001,
+            date;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +98,8 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
 
         }
 
+
+
     }
 
     @Override
@@ -123,6 +142,8 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                     break;
                 }
 
+
+
                 List list = new ArrayList<>();
                 list.add(titleVar.getText().toString());
                 list.add(descriptionVar.getText().toString());
@@ -141,11 +162,55 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                     startActivity(new Intent(this, tasks.class));
                     break;
                 } else {
+                    date = 110101;
+                    registerTask(userId, descriptionVar.getText().toString(), date,
+                            locationVar.getText().toString(), lattitude, longtiude);
+
                     taskMap.put(code += 1, list);
                     startActivity(new Intent(this, tasks.class));
                     break;
                 }
+
         }
+    }
+
+
+    private void registerTask(final int userId, final String descriptionVar, final int date,
+                              final String locationVar, final int lattitude, final int longtiude) {
+
+        Uri.Builder builder = new Uri.Builder();
+        builder.scheme("http")
+                .authority("128.205.44.23")
+                .appendPath("chyour")
+                .appendPath("addTask.php")
+                .appendQueryParameter("userID", String.valueOf(userId))
+                .appendQueryParameter("description", descriptionVar)
+                .appendQueryParameter("date", String.valueOf(date))
+                .appendQueryParameter("address", locationVar)
+                .appendQueryParameter("latitude", String.valueOf(lattitude))
+                .appendQueryParameter("longitude", String.valueOf(longtiude));
+
+        final String uri = builder.build().toString();
+
+        StringRequest strReq = new StringRequest(Request.Method.GET,
+                uri, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                Toast.makeText(getApplicationContext(),"Saved in jarvis!!!", Toast.LENGTH_LONG).show();
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "upload error " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 }
 
