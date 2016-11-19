@@ -1,44 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blue"
     android:orientation="vertical" >
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView10"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false" />
 
         <TextView
             android:id="@+id/tvName"
-            android:layout_width="50dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
             android:layout_alignBaseline="@+id/etName"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <EditText
             android:id="@+id/etName"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/tvName"
             android:hint="Enter full name" />
+
         <TextView
             android:id="@+id/tvCountry"
-            android:layout_width="50dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvName"
             android:text="Email"
             android:layout_alignBaseline="@+id/etEmail"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         <EditText
             android:id="@+id/etEmail"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/tvCountry"
             android:layout_below="@+id/etName"
             android:hint="enter email" />
+
         <TextView
             android:id="@+id/tvTwitter"
-            android:layout_width="75dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvCountry"
             android:text="Password"
@@ -47,32 +66,20 @@
 
         <EditText
             android:id="@+id/etpassword"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/tvTwitter"
             android:layout_below="@+id/etEmail"
             android:hint="enter password" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Register"
+            android:background="@android:color/holo_green_dark" />
 
-    <Button
-        android:id="@+id/button_submit"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="save"
-        android:background="@android:color/holo_green_dark" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvIsConnected"
-        android:layout_gravity="center_horizontal"
-        android:background="#FF0000"
-        android:textColor="#FFF"
-        android:textSize="18dp"
-        android:layout_alignBottom="@+id/tvName"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_width="10dp"
-        android:layout_height="10dp" />
-
-</LinearLayout>
+</RelativeLayout>
