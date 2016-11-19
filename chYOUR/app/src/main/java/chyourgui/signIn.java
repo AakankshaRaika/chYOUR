@@ -1,5 +1,4 @@
 package chyourgui;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -22,16 +20,13 @@ import com.chyour.R;
 import com.chyour.SQLiteHandler;
 import com.chyour.SessionManager;
 import com.chyour.SignupActivity;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class signIn extends AppCompatActivity implements View.OnClickListener {
-
     Button bSignUp;
     Button bSignIn;
     EditText passwordVar;
@@ -39,12 +34,11 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
     ProgressDialog pDialog;
     SessionManager session;
     SQLiteHandler db;
-
+    private  String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-
         emailVar = (EditText) findViewById(R.id.emailVar);
         passwordVar = (EditText) findViewById(R.id.passwordVar);
         bSignIn = (Button) findViewById(R.id.bSignIn);
@@ -52,7 +46,6 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
         bSignIn.setOnClickListener(this);
         bSignUp.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -60,76 +53,79 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                 registration registration = new registration();
                 Map<String, List<String>> map;
                 map = registration.map;
-
-                if (map.size() < 1) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("Wrong Username and or Password");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
-                if (map.containsKey(emailVar.getText().toString()) == false) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("Wrong Username and or Password");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
-                if (map.get(emailVar.getText().toString()).get(1).equals(passwordVar.getText().toString()) == false) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("Wrong Username and or Password");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
+                bSignIn.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        // String name = inputFullName.getText().toString().trim();
+                        String email = emailVar.getText().toString().trim();
+                        String password = passwordVar.getText().toString().trim();
+                        url = "http://128.205.44.23/chyour/registration.php?email="
+                                + email + "&password=" + password;
+                        Toast.makeText(getApplicationContext(),
+                                "signing in...", Toast.LENGTH_LONG)
+                                .show();
+                    }
+                });
+//
+//                if (map.size() < 1) {
+//                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
+//                    builder.setTitle("Alert");
+//                    builder.setMessage("Wrong Username and or Password");
+//                    AlertDialog alertDialog = builder.create();
+//                    alertDialog.show();
+//                    break;
+//                }
+//                if (map.containsKey(emailVar.getText().toString()) == false) {
+//                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
+//                    builder.setTitle("Alert");
+//                    builder.setMessage("Wrong Username and or Password");
+//                    AlertDialog alertDialog = builder.create();
+//                    alertDialog.show();
+//                    break;
+//                }
+//                if (map.get(emailVar.getText().toString()).get(1).equals(passwordVar.getText().toString()) == false) {
+//                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
+//                    builder.setTitle("Alert");
+//                    builder.setMessage("Wrong Username and or Password");
+//                    AlertDialog alertDialog = builder.create();
+//                    alertDialog.show();
+//                    break;
+//                }
                 startActivity(new Intent(this, tasks.class));
                 break;
-
             case R.id.bSignUp:
                 startActivity(new Intent(this, SignupActivity.class));
                 break;
         }
+        /**
+         * function to verify login details in mysql db
+         * */
     }
-    /**
-     * function to verify login details in mysql db
-     * */
     private void checkLogin(final String email, final String password) {
         // Tag used to cancel the request
         String tag_string_req = "req_login";
-
         pDialog.setMessage("Logging in ...");
         showDialog();
-
         StringRequest strReq = new StringRequest(Request.Method.POST,
                 AppConfig.URL_LOGIN, new Response.Listener<String>() {
-
             @Override
             public void onResponse(String response) {
                 Log.d("TAG", "Login Response: " + response.toString());
                 hideDialog();
-
                 try {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
-
                     // Check for error node in json
                     if (!error) {
                         // user successfully logged in
                         // Create login session
                         session.setLogin(true);
-
                         // Now store the user in SQLite
                         String uid = jObj.getString("uid");
-
                         JSONObject user = jObj.getJSONObject("user");
                         String name = user.getString("name");
                         String email = user.getString("email");
                         String created_at = user
                                 .getString("created_at");
-
                         // Inserting row in users table
                         db.addUser(name, email, uid, created_at);
                     } else {
@@ -143,10 +139,8 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e("TAG", "Login Error: " + error.getMessage());
@@ -155,28 +149,22 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("email", email);
                 params.put("password", password);
-
                 return params;
             }
-
         };
-
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
-
     private void showDialog() {
         if (!pDialog.isShowing())
             pDialog.show();
     }
-
     private void hideDialog() {
         if (pDialog.isShowing())
             pDialog.dismiss();
