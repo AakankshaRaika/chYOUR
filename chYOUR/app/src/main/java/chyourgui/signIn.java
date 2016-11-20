@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import com.chyour.R;
 import com.chyour.SignupActivity;
+import com.chyour.faq;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -24,6 +25,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
 
     Button bSignUp;
     Button bSignIn;
+    Button bFAQ;
     EditText passwordVar;
     EditText emailVar;
 
@@ -35,9 +37,11 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
         emailVar = (EditText) findViewById(R.id.emailVar);
         passwordVar = (EditText) findViewById(R.id.passwordVar);
         bSignIn = (Button) findViewById(R.id.bSignIn);
+        bFAQ = (Button) findViewById(R.id.bFAQ);
         bSignUp = (Button) findViewById(R.id.bSignUp);
         bSignIn.setOnClickListener(this);
         bSignUp.setOnClickListener(this);
+        bFAQ.setOnClickListener(this);
     }
 
     @Override
@@ -99,6 +103,11 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.bSignUp:
                 startActivity(new Intent(this, SignupActivity.class));
+                break;
+
+
+            case R.id.bFAQ:
+                startActivity(new Intent(this, faq.class));
                 break;
         }
     }
