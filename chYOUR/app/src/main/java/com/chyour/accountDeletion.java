@@ -57,7 +57,7 @@ public class accountDeletion extends AppCompatActivity implements View.OnClickLi
                     break;
                 }
 
-                if (deleteVar2.getText().toString() != deleteVar3.getText().toString()) {
+                if (!(deleteVar2.getText().toString().equals(deleteVar3.getText().toString()))) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(accountDeletion.this);
                     builder.setTitle("Alert");
                     builder.setMessage("Password and Confirm Password aren't the same");
@@ -65,6 +65,9 @@ public class accountDeletion extends AppCompatActivity implements View.OnClickLi
                     alertDialog.show();
                     break;
                 }
+
+
+
                 startActivity(new Intent(this, signIn.class));
                 break;
 

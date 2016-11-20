@@ -69,7 +69,6 @@
             android:layout_height="wrap_content" android:background="#99aeaaaa" android:ems="10"
             android:hint="enter location here" android:inputType="textPersonName"
             android:textSize="15sp" android:textStyle="normal|bold" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -189,40 +188,16 @@
             </LinearLayout>
         </ScrollView>
         <![CDATA[
-
         android:id="@+id/spinner"
         android:entries="Month" />
-
-
-
-
-
         android:id="@+id/spinner2"
         android:entries="Day" />
-
-
-
-
-
         android:id="@+id/spinner3"
         android:entries="Hour" />
-
-
-
-
-
-
             android:id="@+id/spinner4"
             android:entries="Minute" />
-
-
-
-
-
-
         android:id="@+id/spinner5"
         android:entries="ampm" />
-
         ]]>
 
         <Button android:id="@+id/bAdd" android:layout_width="match_parent"
