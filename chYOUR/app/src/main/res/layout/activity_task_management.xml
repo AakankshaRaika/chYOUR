@@ -10,12 +10,20 @@
     tools:context="chyourgui.TaskManagement">
 
     <LinearLayout android:id="@+id/tmLayout" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp" android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ImageView android:id="@+id/imageView5" android:layout_width="match_parent"
             android:layout_height="wrap_content" app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView36" />
 
         <TextView android:id="@+id/textView14" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="GPS Guidence"
@@ -26,6 +34,11 @@
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="GPS" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView38" />
+
         <TextView android:id="@+id/textView21" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Edit Task"
             android:textAlignment="center" android:textColor="@android:color/black" android:textSize="30sp"
@@ -34,6 +47,11 @@
         <Button android:id="@+id/bEdit" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Edit Task" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView40" />
+
         <TextView android:id="@+id/textView15" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Mark task as completed"
             android:textAlignment="center" android:textColor="@android:color/black"
@@ -41,6 +59,25 @@
 
         <Button android:id="@+id/toggleVar" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Complete" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="118dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.19"
+                android:id="@+id/tmLayout2"></LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:text="go back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bGoBack3"
+            style="@style/Widget.AppCompat.Button.Borderless" />
 
     </LinearLayout>
 </RelativeLayout>

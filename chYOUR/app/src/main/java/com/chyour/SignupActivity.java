@@ -17,6 +17,9 @@ import com.android.volley.toolbox.StringRequest;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,7 +36,7 @@ public class SignupActivity extends Activity {
 
     private EditText inputFullName;
     private EditText inputEmail;
-    private EditText inputPassword;
+    public static EditText inputPassword;
     private SessionManager session;
     private SQLiteHandler db;
 
@@ -48,6 +51,7 @@ public class SignupActivity extends Activity {
         inputEmail = (EditText) findViewById(R.id.etEmail);
         inputPassword = (EditText) findViewById(R.id.etpassword);
         btnRegister = (Button) findViewById(R.id.button_submit);
+
 
 
         // Session manager
@@ -91,6 +95,19 @@ public class SignupActivity extends Activity {
                     Toast.makeText(getApplicationContext(),
                             "Please enter your details!", Toast.LENGTH_LONG)
                             .show();
+                }
+
+                try {
+                    FileOutputStream fileOutputStream  = openFileOutput(inputEmail.getText().toString()+
+                            inputPassword.getText().toString(), MODE_PRIVATE);
+                    fileOutputStream.write((inputEmail.getText().toString()+
+                            inputPassword.getText().toString()).getBytes());
+                    fileOutputStream.close();
+                    Toast.makeText(getApplicationContext(), "User Saved", Toast.LENGTH_LONG).show();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
 
                 Intent intent = new Intent(SignupActivity.this,
