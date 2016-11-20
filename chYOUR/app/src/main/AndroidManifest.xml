@@ -35,7 +35,11 @@
         <activity android:name="com.chyour.SignupActivity" />
         <activity android:name="chyourgui.tasks" />
         <activity android:name="com.chyour.addTasks" />
+        <activity android:name="com.chyour.settings" />
+        <activity android:name="com.chyour.accountDeletion" />
+        <activity android:name="com.chyour.accountManagement" />
         <activity android:name="chyourgui.TaskManagement" />
+        <activity android:name="com.chyour.settings"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
