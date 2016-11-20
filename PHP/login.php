@@ -1,31 +1,33 @@
 <?php
-if($_POST)
-{
-$host="127.0.0.1";
-$user="phpuser";
-$pass="chyour2016";
-$db="chyourdb";
-	$username=$_POST['username'};
-	$password=$_POST['password'];
-	$conn=mysqli_connect($host,$user,$pass);
-	$query="SELECT * from userstbl where email='$email' and password='$password'";
-	$result=mysqli_query($conn, $query);
-
-	if(mysqli_num_rows($result)==1)
-	{
-		session_start();
-		$_SESSION['chyourdb']='true';
-		header('location:index.php');
+require_once 'include/dbFunctions.php';
+$db = new dbFunctions();
+//json response array
+$responce = array("error" => FALSE);
+if(isset($_GET['email']) && isset($_GET['password'])){
+	//receiving parameters
+	$email = $_GET['email'];
+	$password = $_GET['password'];
+	
+	$user = $db->checkUser($email, $password);
+	
+	//check if user is found
+	if($user != false){
+		
+		$response["error"] = FALSE;
+		$response["userID"] = $user["userID"];
+		//$response["user"]["fullname"] = $user["fullname"];
+		//$response["user"]["email"] = $user["email"];
+		echo json_encode($response);
+	} else {	
+		//user not found with email or password
+		$response["error"] = TRUE;
+		$response["error_msg"] = "Email or Password is wrong. Try again.";
+		echo json_encode($response);
 	}
-	else {echo 'wrong username or password';}
+} else {
+	//credential is missing
+	$response["error"] = TRUE;
+	$response["error_msg"] = "Email or Password is missing.";
+	echo json_encode($response);
 }
-?>
-
-<h1>Login</h1>
-<form method="POST">
-username:<br>
-	<input type="text" name="username"><br>
-	password:<br><input type:"password" name="password">
-	<br>
-	<input type="submit" vlaue="Login">
-</form>
+?>  

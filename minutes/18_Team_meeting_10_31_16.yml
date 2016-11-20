@@ -1,0 +1,33 @@
+date: October 31, 2016
+meeting_type: Team
+attendance: [aakanksh, alectuoh, alschmid, jrh7, yosephha]
+absent: [apillai, bclee, btgreen2, dnhickso, vluo]
+excused_absences: []
+task_progress: [
+  {ubit: aakanksh, progress: API},
+  {ubit: alectuoh, progress: login php, password hashing},
+  {ubit: alschmid, progress: Working on task sync php},
+  {ubit: apillai, progress: Absent},
+  {ubit: bclee, progress: Absent},
+  {ubit: btgreen2, progress: Absent},
+  {ubit: dnhickso, progress: Absent},
+  {ubit: jrh7, progress: Looking into email verification and family function},
+  {ubit: vluo, progress: Absent},
+  {ubit: yosephha, progress: local task sync}
+  ]
+issues: []
+Notes:  |
+  Sprint 4 task discussion: 
+Token / Login expiration 
+Finish Login function (activity / php)
+Background activity
+Task syncing 
+Look into SSL
+Password Hashing - Alec will handle
+Need to test repo
+Sign in transition to main task page
+Log in transition to main task page
+Delete dom / gui_brian / signup2php
+App - family locator - reference for code for group 
+Team A - API's AK + Barry, Brian - task storage
+
