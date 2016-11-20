@@ -86,7 +86,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                     if (!error) {
                         // user successfully logged in
 
-                        Toast.makeText(getApplicationContext(), "Welcome Back!",
+                        Toast.makeText(getApplicationContext(), "Welcome!!!",
                                 Toast.LENGTH_LONG).show();
 
                         Intent intent = new Intent(signIn.this,
