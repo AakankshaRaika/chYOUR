@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    package="com.chyour"
-    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+    package="com.chyour">
 
-    <!--
+<!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
@@ -34,10 +32,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="chyourgui.registration" />
+        <activity android:name="com.chyour.SignupActivity" />
         <activity android:name="chyourgui.tasks" />
-        <activity android:name="chyourgui.addTasks" />
+        <activity android:name="com.chyour.addTasks" />
+        <activity android:name="com.chyour.settings" />
+        <activity android:name="com.chyour.accountDeletion" />
+        <activity android:name="com.chyour.accountManagement" />
         <activity android:name="chyourgui.TaskManagement" />
+        <activity android:name="com.chyour.settings"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -48,10 +50,10 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyB7wLNeLzu7hZZcB6-KF7L-rCjkZbu8kG4" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.chyour.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
     </application>
 
