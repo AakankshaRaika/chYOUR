@@ -157,6 +157,10 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                 List list = new ArrayList<>();
                 list.add(titleVar.getText().toString());
                 list.add(descriptionVar.getText().toString());
+
+                category = category.replaceAll("  ", "+").toLowerCase();
+                category = category.replaceAll(" ", "+").toLowerCase();
+
                 list.add(category);
                 list.add(locationVar.getText().toString());
                 list.add(month);
