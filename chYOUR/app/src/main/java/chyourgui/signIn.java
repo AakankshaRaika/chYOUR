@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +23,7 @@ import java.util.Map;
 
 public class signIn extends AppCompatActivity implements View.OnClickListener {
 
+    private String url;
     Button bSignUp;
     Button bSignIn;
     EditText passwordVar;
@@ -79,8 +81,22 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
 
 
                 try {
+                    //String name = inputFullName.getText().toString().trim();
                     openFileInput(emailVar.getText().toString() + passwordVar.getText().toString());
                     startActivity(new Intent(this, tasks.class));
+
+                    String email = emailVar.getText().toString();
+                    String password = passwordVar.getText().toString();
+
+                    url = "http://128.205.44.23/chyour/login.php?email="+ email + "&password=" + password;
+                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
+                    builder.setTitle("http://128.205.44.23/chyour/login.php?email="+ email + "&password=" + password);
+                    builder.setMessage(url);
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+
+
+
                     break;
 
                 } catch (FileNotFoundException e) {
