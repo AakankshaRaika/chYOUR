@@ -46,14 +46,15 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
             bt.setBackgroundColor(0xffff0000);
             String temp = new String();
 
-            temp = "Title: " + taskMap.get(key).get(0) + '\n';
+            temp = "Title: "        + taskMap.get(key).get(0) + '\n';
             temp += "Description: " + taskMap.get(key).get(1) + '\n';
-            temp += "Category: " + taskMap.get(key).get(2) + '\n';
-            temp += "Location: " + taskMap.get(key).get(3) + '\n';
-            temp += "Due Date: " + taskMap.get(key).get(4)
-                    + "/" + taskMap.get(key).get(5) + " "
-                    + taskMap.get(key).get(6) + ":" + taskMap.get(key).get(7)
-                    + taskMap.get(key).get(8);
+            temp += "Category: "    + taskMap.get(key).get(2) + '\n';
+            temp += "Location: "    + taskMap.get(key).get(3) + '\n';
+            temp += "Due Date: "    + taskMap.get(key).get(4) + "/"
+                                    + taskMap.get(key).get(5) + " "
+                                    + taskMap.get(key).get(6) + ":"
+                                    + taskMap.get(key).get(7)
+                                    + taskMap.get(key).get(8);
 
             bt.setText(temp);
             layout2.addView(bt);
