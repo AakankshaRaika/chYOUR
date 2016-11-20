@@ -67,7 +67,7 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.gpsVar:
-                Uri uri = Uri.parse("https://www.google.com/maps/dir/My+Location/"+taskMap.get(currentId).get(3)+"/"); // missing 'http://' will cause crashed
+                Uri uri = Uri.parse("https://www.google.com/maps/dir/My+Location/"+setUserLocationInput()+"+near+me/"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
                 break;
@@ -87,5 +87,12 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
                 break;
 
         }
+    }
+    public string setUserLocationInput(){
+        String setLocation;
+        if(taskMap.get(currentId).get(3).length <= 0 && taskMap.get(currentId).get(2) != "Other" ){
+            setLocation = taskMap.get(currentId).get(2);
+        }
+        return setLocation;
     }
 }
