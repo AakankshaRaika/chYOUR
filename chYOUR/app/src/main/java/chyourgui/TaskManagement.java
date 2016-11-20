@@ -1,6 +1,7 @@
 package chyourgui;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -66,7 +67,9 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.gpsVar:
-                startActivity(new Intent(this, MapsActivity.class));
+                Uri uri = Uri.parse("https://www.google.com/maps/dir/My+Location/"+taskMap.get(currentId).get(3)+"/"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
                 break;
 
             case R.id.toggleVar:
