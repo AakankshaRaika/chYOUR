@@ -37,8 +37,8 @@
         </activity>
         <activity android:name=".SignupActivity" />
         <activity android:name="chyourgui.tasks" />
-        <activity android:name=".accountManagement"/>
-        <activity android:name=".accountDeletion"/>
+        <activity android:name=".accountManagement" />
+        <activity android:name=".accountDeletion" />
         <activity android:name=".addTasks" />
         <activity android:name="chyourgui.TaskManagement" />
         <!--
@@ -56,7 +56,8 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".settings"></activity>
+        <activity android:name=".settings" />
+        <activity android:name=".faq"></activity>
     </application>
 
 </manifest>

@@ -31,7 +31,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:text="FAQ"
+            android:text="FAQ and User Guide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView22"
@@ -54,35 +54,61 @@
                     android:text="
  • Why can't I login?
 
-        Make sure you check your inbox of the email address you signed up with. Click on the verification and you should be able to use chYOUR.
+Make sure you check your inbox of the email address you signed up with. Click on the verification and you should be able to use chYOUR.\n
 
  • What are the recommended locations?
 
-        There are no set recommended locations for each of the categories (groceries, hardware, household, and pharmacy.) If you do not set a location, it will search for, for example, groceries nearby if you input a task under that category.
+There are no set recommended locations for each of the categories (groceries, hardware, household, and pharmacy.) If you do not set a location, it will search for, for example, groceries nearby if you input a task under that category.\n
 
  • Will the app run even when I close it?
 
-        Yes it will it is a background services application. You will have to sign out in order to close it completely.
+Yes it will it is a background services application. You will have to sign out in order to close it completely.
 
  • Will it drain my battery ?
 
-        chYOUR will drain your battery like any regular application would the exception would only be when you turn on your GPS.
+chYOUR will drain your battery like any regular application would the exception would only be when you turn on your GPS.
 
  • Will it also access my emails and password?
 
-        No it we do not have access to your emails or password.
+ No it we do not have access to your emails or password.
 
  • How will you know where to take us?
 
-        The default search algorithm will determine the closest, most compatible store for you based on your distance.
+ The default search algorithm will determine the closest, most compatible store for you based on your distance.
 
  • What if I don’t wish to go to the default location?
 
-        You may change your default location to whichever preferred vendors or stores you wish.
+ You may change your default location to whichever preferred vendors or stores you wish.
 
  • Can I turn off the automatic notifications when I am going about my day?
 
-        Yes, if you go into Settings, you can toggle your notifications on or off."
+Yes, if you go into Settings, you can toggle your notifications on or off.
+
+User Guide: Getting Started
+
+Features:
+
+Tasks
+1. Adding tasks to the list! Press the 'Add Task' button to add a new task.
+2. Fill in the fields for title, description,location, date/time, and categories.
+3. Go about your daily life and chYour will help you find time to fit these tasks into your schedule.
+
+Appointments
+1. As you are adding your task to the list, you must select a category.
+2. For the category option, choose “Other”.
+3. Make sure you enter a correct and accurate value for location and time.
+
+Launch
+1. After you created a task, click on it on the main menu.
+2. You will have the option to launch navigation, edit your task, or mark your task as completed.
+
+Deleting Account
+1. Go to the settings menu.
+2. Click on deactivate account
+3. Confirm that you will be leaving chYour.
+
+Cheers,
+chYour Support Team "
 
                    android:layout_width="match_parent"
                     android:layout_height="1286dp"
@@ -112,13 +138,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
-            android:text="Go back"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bGoBack94"
-            style="@style/Widget.AppCompat.Button.Borderless" />
-
     </LinearLayout>
+
+    <Button
+        android:text="Go back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bGoBack94"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
