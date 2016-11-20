@@ -44,22 +44,30 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
         LinearLayout tmLayout2 = (LinearLayout) findViewById(R.id.tmLayout2);
 
 
-        TextView tv = new TextView(this);
-        tv.setTextSize(15);
-        tv.setGravity(Gravity.CENTER);
-        String temp = new String();
+      //  TextView tv = new TextView(this);
+      //  tv.setTextSize(15);
+      //  tv.setGravity(Gravity.CENTER);
+      //  String temp = new String();
 
-        temp = "Title: " + taskMap.get(currentId).get(0) + '\n';
-        temp += "Description: " + taskMap.get(currentId).get(1) + '\n';
-        temp += "Category: " + taskMap.get(currentId).get(2) + '\n';
-        temp += "Location: " + taskMap.get(currentId).get(3) + '\n';
-        temp += "Due Date: " + taskMap.get(currentId).get(4)
-                + "/" + taskMap.get(currentId).get(5) + " "
-                + taskMap.get(currentId).get(6) + ":" + taskMap.get(currentId).get(7)
-                + taskMap.get(currentId).get(8);
+        //temp = "Title: " + taskMap.get(currentId).get(0) + '\n';
+        //temp += "Description: " + taskMap.get(currentId).get(1) + '\n';
+       // temp += "Category: " + taskMap.get(currentId).get(2) + '\n';
+        //temp += "Location: " + taskMap.get(currentId).get(3) + '\n';
+        //temp += "Start time: " + taskMap.get(currentId).get(4)
+                //+ "/" + taskMap.get(currentId).get(5) + " "
+                //+ taskMap.get(currentId).get(6) + ":" + taskMap.get(currentId).get(7)
+                //+ taskMap.get(currentId).get(8);
 
-        tv.setText(temp);
-        tmLayout2.addView(tv);
+        //temp += "End time: " + taskMap.get(currentId).get(9)
+          //      + "/" + taskMap.get(currentId).get(10) + " "
+          //      + taskMap.get(currentId).get(11) + ":" + taskMap.get(currentId).get(12)
+            //    + taskMap.get(currentId).get(13);
+
+
+
+
+      //  tv.setText(temp);
+      //  tmLayout2.addView(tv);
     }
 
     @Override

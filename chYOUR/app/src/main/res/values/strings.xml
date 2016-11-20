@@ -4,6 +4,7 @@
     <string name="month_prompt">Choose a month</string>
 
     <string-array name="category_array">
+        <item>None</item>
         <item>Groceries</item>
         <item>Hardware</item>
         <item>Pharmacy</item>
