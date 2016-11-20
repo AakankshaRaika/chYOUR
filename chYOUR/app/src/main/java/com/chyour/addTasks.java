@@ -143,7 +143,7 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                 }
                 
 
-                if (category == "other" && locationVar.getText().length() < 0) {
+                if (category == "Other" && locationVar.getText().length() < 0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(addTasks.this);
                     builder.setTitle("Alert");
                     builder.setMessage("All Fields not Filled in");
