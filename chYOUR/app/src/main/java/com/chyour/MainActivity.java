@@ -22,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_main);
+        setContentView(R.layout.activity_sign_in);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        inputEmail = (EditText) findViewById(R.id.et_username);
-        inputPassword = (EditText) findViewById(R.id.et_password);
-        btn_login = (Button) findViewById(R.id.b_login);
-        btn_signup = (Button) findViewById(R.id.button);
+        inputEmail = (EditText) findViewById(R.id.emailVar);
+        inputPassword = (EditText) findViewById(R.id.passwordVar);
+        btn_login = (Button) findViewById(R.id.bSignIn);
+        btn_signup = (Button) findViewById(R.id.bSignUp);
 
 
         // Link to signup Screen
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }

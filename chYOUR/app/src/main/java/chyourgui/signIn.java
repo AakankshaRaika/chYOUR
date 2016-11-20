@@ -9,7 +9,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.chyour.R;
+import com.chyour.SignupActivity;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
 
@@ -37,39 +44,61 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bSignIn:
-                registration registration = new registration();
-                Map<String, List<String>> map;
-                map = registration.map;
+               // registration registration = new registration();
+               // Map<String, List<String>> map;
+               // map = registration.map;
 
-                if (map.size() < 1) {
+
+
+                if (emailVar.length() < 1 || passwordVar.length() < 0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
                     builder.setTitle("Alert");
-                    builder.setMessage("Wrong Username and or Password");
+                    builder.setMessage("All Fields not Filled in");
                     AlertDialog alertDialog = builder.create();
                     alertDialog.show();
                     break;
                 }
-                if (map.containsKey(emailVar.getText().toString()) == false) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("Wrong Username and or Password");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
+
+                //if (map.containsKey(emailVar.getText().toString()) == false) {
+                 //   AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
+                 //   builder.setTitle("Alert");
+                 //   builder.setMessage("Wrong Username and or Password");
+                 //   AlertDialog alertDialog = builder.create();
+                 //   alertDialog.show();
+                 //   break;
+                //}
+                //if (map.get(emailVar.getText().toString()).get(1).equals(passwordVar.getText().toString()) == false) {
+                //    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
+                //    builder.setTitle("Alert");
+                //    builder.setMessage("Wrong Username and or Password");
+                //    AlertDialog alertDialog = builder.create();
+                //    alertDialog.show();
+               //     break;
+               // }
+
+
+
+                try {
+                    openFileInput(emailVar.getText().toString() + passwordVar.getText().toString());
+                    startActivity(new Intent(this, tasks.class));
                     break;
-                }
-                if (map.get(emailVar.getText().toString()).get(1).equals(passwordVar.getText().toString()) == false) {
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
                     AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("Wrong Username and or Password");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
+                        builder.setTitle("Alert");
+                        builder.setMessage("Wrong Username and or Password");
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     break;
+
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                startActivity(new Intent(this, tasks.class));
-                break;
+
 
             case R.id.bSignUp:
-                startActivity(new Intent(this, registration.class));
+                startActivity(new Intent(this, SignupActivity.class));
                 break;
         }
     }

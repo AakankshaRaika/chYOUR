@@ -10,6 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.chyour.R;
+import com.chyour.addTasks;
+import com.chyour.settings;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,9 +19,10 @@ import java.util.Map;
 
 public class tasks extends AppCompatActivity implements View.OnClickListener {
 
-    static Map<Integer, List<String>> taskMap = new HashMap<>();
-    static int currentId;
+    public static Map<Integer, List<String>> taskMap = new HashMap<>();
+    public static int currentId;
     Button bAddTask;
+    Button bSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +30,14 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_tasks);
 
         LinearLayout layout = (LinearLayout) findViewById(R.id.layout);
+        LinearLayout layout2 = (LinearLayout) findViewById(R.id.layout2);
 
         if (taskMap.size() < 1) {
             TextView tv = new TextView(this);
             tv.setTextSize(50);
             tv.setGravity(Gravity.CENTER);
             tv.setText("Currently no tasks");
-            layout.addView(tv);
+            layout2.addView(tv);
         }
 
         for (Integer key : taskMap.keySet()) {
@@ -44,7 +48,7 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
 
             temp = "Title: " + taskMap.get(key).get(0) + '\n';
             temp += "Description: " + taskMap.get(key).get(1) + '\n';
-            temp += "Range: " + taskMap.get(key).get(2) + '\n';
+            temp += "Category: " + taskMap.get(key).get(2) + '\n';
             temp += "Location: " + taskMap.get(key).get(3) + '\n';
             temp += "Due Date: " + taskMap.get(key).get(4)
                     + "/" + taskMap.get(key).get(5) + " "
@@ -52,11 +56,12 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
                     + taskMap.get(key).get(8);
 
             bt.setText(temp);
-            layout.addView(bt);
+            layout2.addView(bt);
             bt.setId(key);
             bt.setOnClickListener(this);
         }
-
+        bSettings = (Button) findViewById(R.id.bSettings);
+        bSettings.setOnClickListener(this);
         bAddTask = (Button) findViewById(R.id.bAddTask);
         bAddTask.setOnClickListener(this);
 
@@ -69,6 +74,13 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
             case R.id.bAddTask:
                 startActivity(new Intent(this, addTasks.class));
                 break;
+
+
+            case R.id.bSettings:
+                startActivity(new Intent(this, settings.class));
+                break;
+
+
 
             default:
                 if (taskMap.containsKey(v.getId())) {
