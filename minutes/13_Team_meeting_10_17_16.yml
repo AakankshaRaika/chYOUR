@@ -13,7 +13,7 @@ task_progress: [
   {ubit: dnhickso, progress: absent},
   {ubit: jrh7, progress: Back end, researching SSL, working with Alec on php code, tweaking DB},
   {ubit: vluo, progress: Back end, working on log-in activity},
-  {ubit: yosephha, absent}
+  {ubit: yosephha, progress: absent}
   ]
 issues: []
 Notes:  |

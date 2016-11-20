@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.chyour.R;
+import com.chyour.SignupActivity;
 
 import java.util.List;
 import java.util.Map;
@@ -69,7 +70,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.bSignUp:
-                startActivity(new Intent(this, registration.class));
+                startActivity(new Intent(this, SignupActivity.class));
                 break;
         }
     }

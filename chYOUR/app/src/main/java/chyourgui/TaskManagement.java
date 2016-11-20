@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.chyour.MapsActivity;
 import com.chyour.R;
+import com.chyour.addTasks;
 
 import static chyourgui.tasks.currentId;
 import static chyourgui.tasks.taskMap;
@@ -18,7 +19,7 @@ import static chyourgui.tasks.taskMap;
 
 public class TaskManagement extends AppCompatActivity implements View.OnClickListener {
 
-    static int editClicked;
+    public static int editClicked;
     Button gpsVar;
     Button toggleVar;
     Button bEdit;

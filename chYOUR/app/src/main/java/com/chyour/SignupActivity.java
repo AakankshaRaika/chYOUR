@@ -1,6 +1,7 @@
 package com.chyour;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +19,9 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
+//import chyourgui.signIn;
+import chyourgui.tasks;
 
 /*
  * SignupActivity author : @apillai @yosephh
@@ -56,7 +60,7 @@ public class SignupActivity extends Activity {
         if (session.isLoggedIn()) {
             // User is already logged in. Take him to main activity
 //            Intent intent = new Intent(SignupActivity.this,
-//                    Taskpage.class);
+//                    signIn.class);
 //            startActivity(intent);
 //            finish();
         }
@@ -88,6 +92,11 @@ public class SignupActivity extends Activity {
                             "Please enter your details!", Toast.LENGTH_LONG)
                             .show();
                 }
+
+                Intent intent = new Intent(SignupActivity.this,
+                        tasks.class);
+                startActivity(intent);
+                finish();
             }
         });
 

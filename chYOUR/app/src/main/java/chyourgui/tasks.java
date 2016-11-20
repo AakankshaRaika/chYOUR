@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.chyour.R;
+import com.chyour.addTasks;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,8 +18,8 @@ import java.util.Map;
 
 public class tasks extends AppCompatActivity implements View.OnClickListener {
 
-    static Map<Integer, List<String>> taskMap = new HashMap<>();
-    static int currentId;
+    public static Map<Integer, List<String>> taskMap = new HashMap<>();
+    public static int currentId;
     Button bAddTask;
 
     @Override
