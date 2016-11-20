@@ -23,6 +23,7 @@ import java.util.Map;
 
 //import chyourgui.signIn;
 import chyourgui.tasks;
+import chyourgui.signIn;
 
 /*
  * SignupActivity author : @apillai @yosephh
@@ -56,13 +57,6 @@ public class SignupActivity extends Activity {
         db = new SQLiteHandler(getApplicationContext());
 
         // Check if user is already logged in or not
-        if (session.isLoggedIn()) {
-            // User is already logged in. Take him to main activity
-//            Intent intent = new Intent(SignupActivity.this,
-//                    signIn.class);
-//            startActivity(intent);
-//            finish();
-        }
 
         // Register Button Click event
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +113,7 @@ public class SignupActivity extends Activity {
                                 Toast.LENGTH_LONG).show();
 
                         Intent intent = new Intent(SignupActivity.this,
-                                tasks.class);
+                                signIn.class);
                         startActivity(intent);
                         finish();
 
