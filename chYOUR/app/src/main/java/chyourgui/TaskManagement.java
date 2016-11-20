@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.chyour.MapsActivity;
 import com.chyour.R;
 import com.chyour.addTasks;
 
@@ -67,7 +66,7 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.gpsVar:
-                Uri uri = Uri.parse("https://www.google.com/maps/dir/My+Location/"+setUserLocationInput()+"+near+me/"); // missing 'http://' will cause crashed
+                Uri uri = Uri.parse("https://www.google.com/maps/dir/My+Location/"+setUserLocationInput()+"/"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
                 break;
@@ -88,10 +87,13 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
 
         }
     }
-    public string setUserLocationInput(){
-        String setLocation;
-        if(taskMap.get(currentId).get(3).length <= 0 && taskMap.get(currentId).get(2) != "Other" ){
-            setLocation = taskMap.get(currentId).get(2);
+    public String setUserLocationInput(){
+        String setLocation = "";
+        if(taskMap.get(currentId).get(3).length() <= 0 && taskMap.get(currentId).get(2) != "Other" ){
+            setLocation = taskMap.get(currentId).get(2) + "+near+me";
+        }
+        else {
+            setLocation = taskMap.get(currentId).get(3);
         }
         return setLocation;
     }
