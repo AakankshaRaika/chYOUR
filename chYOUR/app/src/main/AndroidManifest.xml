@@ -34,7 +34,7 @@
         </activity>
         <activity android:name="com.chyour.SignupActivity" />
         <activity android:name="chyourgui.tasks" />
-        <activity android:name=".addTasks" />
+        <activity android:name="com.chyour.addTasks" />
         <activity android:name="chyourgui.TaskManagement" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -46,10 +46,10 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyB7wLNeLzu7hZZcB6-KF7L-rCjkZbu8kG4" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.chyour.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
     </application>
 
