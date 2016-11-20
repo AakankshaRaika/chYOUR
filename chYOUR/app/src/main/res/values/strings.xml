@@ -2,6 +2,17 @@
     <string name="app_name">chYOUR</string>
     <string name="action_settings">Settings</string>
     <string name="month_prompt">Choose a month</string>
+
+    <string-array name="category_array">
+        <item>None</item>
+        <item>Groceries</item>
+        <item>Hardware</item>
+        <item>Pharmacy</item>
+        <item>Other</item>
+    </string-array>
+
+
+
     <string-array name="month_array">
         <item>January</item>
         <item>February</item>

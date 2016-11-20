@@ -1,38 +1,29 @@
 chYOUR Frequently Asked Questions:
 
-• What are the default locations?
-	• For groceries the default locations are : Tops and Wegmans.
-	• For hardware the default locations are :  House depot and Lowes
-	• For household the default locations are : Walmart and Target
-	• For general Pharmacy  the default locations are : CVS and Walgreens. 
+• Why can't I login?
+	• Make sure you check your inbox of the email address you signed up with. Click on the verification link and you should be able to use chYOUR.
+	
+• What are the recommended locations?
+	• There are no set recommended locations for each of the categories (groceries, hardware, household, and pharmacy.) If you do not set a location, it will search for, for example, groceries nearby if you input a task under that category.
 
-• How do I add family members?
-	• Go to the settings menu and click on the add member button. 
-
-• How do I add calendars?
-	• Go to settings and click on add calendar you will have 3 options 
-		◦ Google 
-		◦ Outlook
-		◦ Phone 
 • Will the app run even when I close it?
-	• Yes it will it is a background services application. You will have to sign out in order to close it completely.  
+	• Yes it will it is a background services application. You will have to sign out in order to close it completely.
 
 • Will it drain my battery ? 
-	• As it is a background services app it will. 
+	• chYOUR will drain your battery like any regular application would the exception would only be when you turn on your GPS.
 
-• Will it also access my emails?
-	• No it won’t it will only access your calendar.  
+• Will it also access my emails and password?
+	• No it we do not have access to your emails or password.
 
-• How will you know where to take us if you have multiple default location?
-	• The default algorithm will determine the closest, most compatible store for you based on distance. 
+• How will you know where to take us?
+	• The default search algorithm will determine the closest, most compatible store for you based on your distance.
 
 • What if I don’t wish to go to the default location?
-	• You may change your default location to whichever preferred vendors or stores you wish. 
+	• You may change your default location to whichever preferred vendors or stores you wish.
 
-• Will my family members be able to see my list and edit or delete items from it?
-	• Family members will be able to see the items and lists that you personally share with them. You may have your own private list that is accessible to only yourself.  
+• Can I turn off the automatic notifications when I am going about my day?
+	• Yes, if you go into Settings, you can toggle your notifications on or off.
 
 
-Oct 2nd 2016
+November 19, 2016
 Barry Lee , Aakanksha Raika
-
