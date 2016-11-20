@@ -23,20 +23,25 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
     Button gpsVar;
     Button toggleVar;
     Button bEdit;
+    Button bGoBack3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_management);
 
+        bGoBack3 = (Button) findViewById(R.id.bGoBack3);
         gpsVar = (Button) findViewById(R.id.gpsVar);
         bEdit = (Button) findViewById(R.id.bEdit);
         toggleVar = (Button) findViewById(R.id.toggleVar);
+
+        bGoBack3.setOnClickListener(this);
         gpsVar.setOnClickListener(this);
         bEdit.setOnClickListener(this);
         toggleVar.setOnClickListener(this);
 
         LinearLayout layout = (LinearLayout) findViewById(R.id.tmLayout);
+        LinearLayout tmLayout2 = (LinearLayout) findViewById(R.id.tmLayout2);
 
 
         TextView tv = new TextView(this);
@@ -46,7 +51,7 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
 
         temp = "Title: " + taskMap.get(currentId).get(0) + '\n';
         temp += "Description: " + taskMap.get(currentId).get(1) + '\n';
-        temp += "Range: " + taskMap.get(currentId).get(2) + '\n';
+        temp += "Category: " + taskMap.get(currentId).get(2) + '\n';
         temp += "Location: " + taskMap.get(currentId).get(3) + '\n';
         temp += "Due Date: " + taskMap.get(currentId).get(4)
                 + "/" + taskMap.get(currentId).get(5) + " "
@@ -54,7 +59,7 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
                 + taskMap.get(currentId).get(8);
 
         tv.setText(temp);
-        layout.addView(tv);
+        tmLayout2.addView(tv);
     }
 
     @Override
@@ -72,6 +77,10 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
             case R.id.bEdit:
                 editClicked = 1;
                 startActivity(new Intent(this, addTasks.class));
+                break;
+
+            case R.id.bGoBack3:
+                startActivity(new Intent(this, tasks.class));
                 break;
 
         }
