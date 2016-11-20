@@ -48,7 +48,7 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
 
             temp = "Title: " + taskMap.get(key).get(0) + '\n';
             temp += "Description: " + taskMap.get(key).get(1) + '\n';
-            temp += "Range: " + taskMap.get(key).get(2) + '\n';
+            temp += "Category: " + taskMap.get(key).get(2) + '\n';
             temp += "Location: " + taskMap.get(key).get(3) + '\n';
             temp += "Due Date: " + taskMap.get(key).get(4)
                     + "/" + taskMap.get(key).get(5) + " "

@@ -31,13 +31,13 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
     Button bGoBack4;
     EditText titleVar;
     EditText descriptionVar;
-    EditText rangeVar;
     EditText locationVar;
     Spinner spinner1;
     Spinner spinner2;
     Spinner spinner3;
     Spinner spinner4;
     Spinner spinner5;
+    Spinner spinner6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,6 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
 
         titleVar = (EditText) findViewById(R.id.titleVar);
         descriptionVar = (EditText) findViewById(R.id.descriptionVar);
-        rangeVar = (EditText) findViewById(R.id.rangeVar);
         locationVar = (EditText) findViewById(R.id.locationVar);
         bAdd.setOnClickListener(this);
         bGoBack4.setOnClickListener(this);
@@ -58,12 +57,12 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
         spinner3 = (Spinner) findViewById(R.id.hour);
         spinner4 = (Spinner) findViewById(R.id.minute);
         spinner5 = (Spinner) findViewById(R.id.ampm);
+        spinner6 = (Spinner) findViewById(R.id.category);
 
         if (editClicked == 1) {
 
             titleVar.setText(taskMap.get(currentId).get(0));
             descriptionVar.setText(taskMap.get(currentId).get(1));
-            rangeVar.setText(taskMap.get(currentId).get(2));
             locationVar.setText(taskMap.get(currentId).get(3));
 
             ArrayAdapter myAdap1 = (ArrayAdapter) spinner1.getAdapter();
@@ -87,6 +86,10 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
             int spinnerPosition5 = myAdap5.getPosition(taskMap.get(currentId).get(8));
             spinner5.setSelection(spinnerPosition5);
 
+            ArrayAdapter myAdap6 = (ArrayAdapter) spinner6.getAdapter();
+            int spinnerPosition6 = myAdap5.getPosition(taskMap.get(currentId).get(8));
+            spinner6.setSelection(spinnerPosition6);
+
         }
 
     }
@@ -100,6 +103,8 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
         String hour = spinner3.getSelectedItem().toString();
         String minute = spinner4.getSelectedItem().toString();
         String ampm = spinner5.getSelectedItem().toString();
+        String category = spinner6.getSelectedItem().toString();
+
 
         switch (v.getId()) {
 
@@ -128,12 +133,31 @@ public class addTasks extends AppCompatActivity implements View.OnClickListener 
                     break;
                 }
 
+                if (category.length() < 1) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(addTasks.this);
+                    builder.setTitle("Alert");
+                    builder.setMessage("All Fields not Filled in");
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                    break;
+                }
+                
+
+                if (category == "other" && locationVar.getText().length() < 0) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(addTasks.this);
+                    builder.setTitle("Alert");
+                    builder.setMessage("All Fields not Filled in");
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                    break;
+                }
+
 
 
                 List list = new ArrayList<>();
                 list.add(titleVar.getText().toString());
                 list.add(descriptionVar.getText().toString());
-                list.add(rangeVar.getText().toString());
+                list.add(category);
                 list.add(locationVar.getText().toString());
                 list.add(month);
                 list.add(day);

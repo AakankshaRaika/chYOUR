@@ -51,7 +51,7 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
 
         temp = "Title: " + taskMap.get(currentId).get(0) + '\n';
         temp += "Description: " + taskMap.get(currentId).get(1) + '\n';
-        temp += "Range: " + taskMap.get(currentId).get(2) + '\n';
+        temp += "Category: " + taskMap.get(currentId).get(2) + '\n';
         temp += "Location: " + taskMap.get(currentId).get(3) + '\n';
         temp += "Due Date: " + taskMap.get(currentId).get(4)
                 + "/" + taskMap.get(currentId).get(5) + " "

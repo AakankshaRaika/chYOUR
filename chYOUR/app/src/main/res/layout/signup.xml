@@ -21,17 +21,16 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/logo"
-            android:id="@+id/imageView10"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="false"
-            android:cropToPadding="false" />
+            android:src="@drawable/logo"
+            android:id="@+id/imageView90" />
 
         <TextView
             android:text="Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView44" />
+            android:id="@+id/textView48"
+            android:textSize="17sp"
+            android:textStyle="normal|bold" />
 
         <EditText
             android:layout_width="match_parent"
@@ -45,7 +44,9 @@
             android:text="Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView45" />
+            android:id="@+id/textView49"
+            android:textSize="17sp"
+            android:textStyle="normal|bold" />
 
         <EditText
             android:layout_width="match_parent"
@@ -59,15 +60,17 @@
             android:text="Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView47" />
+            android:id="@+id/textView50"
+            android:textStyle="normal|bold"
+            android:textSize="17sp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/etpassword"
-            android:hint="Enter password here" />
+            android:hint="Enter password here"
+            android:id="@+id/etpassword" />
 
         <Button
             android:text="Register"
