@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import com.chyour.R;
 import com.chyour.SignupActivity;
+import com.chyour.contactUs;
 import com.chyour.faq;
 
 import java.io.BufferedReader;
@@ -104,11 +105,13 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
             case R.id.bSignUp:
                 startActivity(new Intent(this, SignupActivity.class));
                 break;
-
-
             case R.id.bFAQ:
                 startActivity(new Intent(this, faq.class));
                 break;
+            case R.id.bContactUs:
+                startActivity(new Intent(this, contactUs.class));
+                break;
+
         }
     }
 }

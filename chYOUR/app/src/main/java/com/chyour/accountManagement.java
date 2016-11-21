@@ -81,7 +81,7 @@ public class accountManagement extends AppCompatActivity implements View.OnClick
                     alertDialog.show();
                     break;
                 }
-                if (currentPassword1.getText().toString() != inputPassword.getText().toString()) {
+                if (!(currentPassword1.getText().toString().equals(inputPassword.getText().toString()))) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
                     builder.setTitle("Alert");
                     builder.setMessage("Wrong Password");
@@ -89,7 +89,7 @@ public class accountManagement extends AppCompatActivity implements View.OnClick
                     alertDialog.show();
                     break;
                 }
-                if (newPassword2.getText().toString() != confirmPassword1.getText().toString()) {
+                if (!(newPassword2.getText().toString().equals(confirmPassword1.getText().toString()))) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
                     builder.setTitle("Alert");
                     builder.setMessage("New Password and Confirm Password arent the same");
