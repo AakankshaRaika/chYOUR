@@ -1,29 +1,29 @@
 chYOUR Frequently Asked Questions:
 
-• Why can't I login?
-	• Make sure you check your inbox of the email address you signed up with. Click on the verification link and you should be able to use chYOUR.
-	
+• How do I turn off notifications?
+	• Go to Settings and toggle notifications from there.
+
 • What are the recommended locations?
-	• There are no set recommended locations for each of the categories (groceries, hardware, household, and pharmacy.) If you do not set a location, it will search for, for example, groceries nearby if you input a task under that category.
+	• The recommended locations are based off of two things (1) your current location and (2) the category the task it is currently labeled under. We find the location of what you need completed and we add it to your task.
 
 • Will the app run even when I close it?
 	• Yes it will it is a background services application. You will have to sign out in order to close it completely.
 
-• Will it drain my battery ? 
-	• chYOUR will drain your battery like any regular application would the exception would only be when you turn on your GPS.
+• Will it drain my battery? 
+	• chYOUR on its own will drain your battery at a normal rate. If you have the navigation on, it will drain your battery quicker.
 
-• Will it also access my emails and password?
-	• No it we do not have access to your emails or password.
+• Will it also access my emails?
+	• No it will not. Emails are only used for login and verifying.
 
-• How will you know where to take us?
-	• The default search algorithm will determine the closest, most compatible store for you based on your distance.
+• I have chosen a category, how will you know where to take us if you do not list a location?
+	• The default search algorithm will determine the closest, most compatible store for you based on distance.
 
-• What if I don’t wish to go to the default location?
-	• You may change your default location to whichever preferred vendors or stores you wish.
+• What if I don’t wish to go to the recommended location?
+	• You may change your recommended location to whichever preferred vendors or stores you wish.
 
-• Can I turn off the automatic notifications when I am going about my day?
-	• Yes, if you go into Settings, you can toggle your notifications on or off.
+• Why is the recommended location taking me to a strange location?
+	• The recommended location list consists of stores and vendors local and corporate. If the store chYOUR is directing to you is incorrect, type in a real address.
 
-
-November 19, 2016
+November 20, 2016
 Barry Lee , Aakanksha Raika
+
