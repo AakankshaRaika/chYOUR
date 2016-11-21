@@ -20,9 +20,11 @@ if(isset($_GET['userID'])){
                 echo json_encode($response);
         }
 } else {
-	//userId didnt send
-	$response["error"] = TRUE;
-	$response["error_msg"]= "UserID failed to send";	
+        //userId didnt send
+        $response["error"] = TRUE;
+        $response["error_msg"]= "UserID failed to send";
+        echo json_encode($response);
 }
+
 ?>
 
