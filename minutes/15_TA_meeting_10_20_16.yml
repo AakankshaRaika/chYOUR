@@ -13,7 +13,7 @@ task_progress: [
   {ubit: dnhickso, progress: Front end, working with location and Google API},
   {ubit: jrh7, progress: Back end, researching SSL, working with Alec on php code, tweaking DB},
   {ubit: vluo, progress: absent},
-  {ubit: yosephha, absent}
+  {ubit: yosephha, progress: absent}
   ]
 issues: []
 Notes:  |

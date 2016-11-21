@@ -19,6 +19,13 @@ if (isset($_GET['fullname']) && isset($_GET['email']) && isset($_GET['password']
         $response["error"] = TRUE;
         $response["error_msg"] = "User already exists with email address " . $email;
         echo json_encode($response);
+
+    } else if($db->badEmail($email)) {
+
+        $response["error"] = TRUE;
+        $response["error_msg"] = "Bad Email! Does not contain '@' or '.'";
+        echo json_encode($response);
+
     } else {
         // create a new user
         $user = $db->storeUser($fullname, $email, $password);
@@ -28,6 +35,7 @@ if (isset($_GET['fullname']) && isset($_GET['email']) && isset($_GET['password']
             $response["uid"] = $user["userID"];
             $response["user"]["fullname"] = $user["fullname"];
             $response["user"]["email"] = $user["email"];
+
 	    echo json_encode($response);
         } else {
             // user failed to store

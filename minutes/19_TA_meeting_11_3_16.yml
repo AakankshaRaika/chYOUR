@@ -1,0 +1,35 @@
+date: November 3, 2016
+meeting_type: TA
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, btgreen2, dnhickso, jrh7, yosephha]
+absent: []
+excused_absences: [vluo]
+task_progress: [
+  {ubit: aakanksh, progress: API - map},
+  {ubit: alectuoh, progress: login php, password hashing, verify that an email is input},
+  {ubit: alschmid, progress: Working on task sync php},
+  {ubit: apillai, progress: Login, hash before transmission},
+  {ubit: bclee, progress: API},
+  {ubit: btgreen2, progress: Local storage},
+  {ubit: dnhickso, progress: Location / range},
+  {ubit: jrh7, progress: Looking into email verification and family function},
+  {ubit: vluo, progress: Absent},
+  {ubit: yosephha, progress: local task sync}
+  ]
+issues: []
+Notes:  |
+Demoed app for Ruhan, discussed replacing 
+
+Submission issues - communication is bad as there is issues oin each persons code.  DO NOT PUSH UNTESTED CODE...  Some began working more in third week, we must put it together, get to meetings, communicate, make it happen.
+
+Merging is an issue from sprint 3. Some folks have very few commits, losing credit individually.  Grading wise - tried to give us as much credit as possible, but we need to help ourselves.  TEST TEST TEST.  3 GUI's is unacceptable, counted as not working as code is there but not working.  Creating "merging" group (Jason, Ash, Aakanksha, Yoseph, Brian) that will handle merges, will meet  mid third week to merge as group.  
+
+Replacing development / Team A/B with fixing-errors branch and wiping other accessory branches.
+
+Family feature needs back end support - google calendar?  Need to verify email addresses for feature, should do so anyways.  
+
+Work on API 19 for android studio.
+
+Change password
+
+Delete / Deactivate account
+

@@ -1,0 +1,21 @@
+date: November 14, 2016
+meeting_type: Team
+attendance: [aakanksh, alectuoh, alschmid, apillai, bclee, btgreen2, jrh7, vluo, yosephha]
+absent: []
+excused_absences: [dnhickso]
+task_progress: [
+  {ubit: aakanksh, progress: Issue with getMap()},
+  {ubit: alectuoh, progress: Login php finished, able to verify email address format},
+  {ubit: alschmid, progress: Sync tasks ok},
+  {ubit: apillai, progress: Login app side ok, working on password hash, logout},
+  {ubit: bclee, progress: Working API},
+  {ubit: btgreen2, progress: Local storage},
+  {ubit: dnhickso, progress: absent},
+  {ubit: jrh7, progress: Family not feasible with time constraints, working on email verifications},
+  {ubit: vluo, progress: Receiving login response in progress, need to test},
+  {ubit: yosephha, progress: local task sync}
+  ]
+issues: []
+Notes:  |
+Pushed code merged up to development branch, subteam meetings planned.  Progress about the same as at the TA meeting.
+

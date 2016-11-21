@@ -79,6 +79,61 @@ class dbFunctions {
             		return false;
         	}
     	}
+
+	public function checkUser($email, $password){
+
+		$stmt = $this->conn->prepare("SELECT * FROM usersTBL WHERE email = ?");
+		$stmt->bind_param("s". $email);
+		$result = $stmt->execute();
+		if($result){
+			$user = $stmt->get_result()->fetch_assoc();
+			$stmt->close(); 
+			
+			$pass = $user['password'];
+			if($pass == $password){
+				return $user;
+			}
+		} else {
+			return NULL;
+		}
+	}
+
+	public function badEmail($email){
+
+                if(strpos($email, '@') == false || strpos($email, '.') == false){
+                        return true;
+                }
+
+        }
+        
+    public function addTask($uid, $desc, $datee, $addr, $lat, $long) {
+			
+			$stmt = $this->conn->prepare("INSERT INTO tasksTBL(userID, description, date, address, latitude, longitude)
+			 VALUES(?,?, ?, ?, ?, ?)");
+            $stmt->bind_param('isisii', $uid, $desc, $datee, $addr, $lat, $long);
+            $result = $stmt->execute();
+            $stmt->close(); 
+        
+	}
+
+	public function deleteUser($uid){
+
+                $stmt = $this->conn->prepare("DELETE FROM usersTBL WHERE userID = ?");
+                $stmt->bind_param('i', $uid);
+                $result = $stmt->execute();
+
+
+                $stmt->close();
+
+                if($result){
+                        return true;
+                } else {
+                        return false;
+                }
+
+        }
+
+				
 }
 
 ?>
