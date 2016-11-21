@@ -50,5 +50,39 @@
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="Sign Up" android:textColor="#ffffff" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:layout_weight="0.04" />
+
+        <Button
+            android:text="FAQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bFAQ"
+            android:layout_weight="0.04"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24"
+            android:layout_weight="0.04" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:id="@+id/bContactUs"
+            android:layout_weight="0.04"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26"
+            android:layout_weight="0.04" />
+
     </LinearLayout>
 </RelativeLayout>

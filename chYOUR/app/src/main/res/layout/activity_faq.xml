@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_faq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/blue"
+    tools:context="com.chyour.faq">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="FAQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView22"
+            android:textStyle="normal|bold"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            android:layout_weight="0.79">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="
+Q) What are the default locations?
+	• For groceries the default locations are : Tops and Wegmans.
+	• For hardware the default locations are :  House depot and Lowes
+	• For household the default locations are : Walmart and Target
+	• For general Pharmacy  the default locations are : CVS and Walgreens.
+
+Q) How do I add family members?
+	• Go to the settings menu and click on the add member button.
+
+Q) Will the app run even when I close it?
+	• Yes it will it is a background services application. You will have to sign out in order to close it completely.  
+
+Q) Will it drain my battery ?
+	• As it is a background services app it will.
+
+Q) Will it also access my emails?
+	• No it won’t it will only access your calendar.  
+
+Q) How will you know where to take us if you have multiple default location?
+	• The default algorithm will determine the closest, most compatible store for you based on distance. 
+
+Q) What if I don’t wish to go to the default location?
+	• You may change your default location to whichever preferred vendors or stores you wish. 
+
+Q) Will my family members be able to see my list and edit or delete items from it?
+	• Family members will be able to see the items and lists that you personally share with them. You may have your own private list that is accessible to only yourself.  
+
+
+Oct 2nd 2016
+Barry Lee , Aakanksha Raika
+
+                    "
+
+                   android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/textView25"
+                    android:textStyle="normal|bold"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Go back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bGoBack94"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

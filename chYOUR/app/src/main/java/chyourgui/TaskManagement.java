@@ -1,6 +1,7 @@
 package chyourgui;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -9,7 +10,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.chyour.MapsActivity;
 import com.chyour.R;
 import com.chyour.addTasks;
 
@@ -23,20 +23,25 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
     Button gpsVar;
     Button toggleVar;
     Button bEdit;
+    Button bGoBack3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_management);
 
+        bGoBack3 = (Button) findViewById(R.id.bGoBack3);
         gpsVar = (Button) findViewById(R.id.gpsVar);
         bEdit = (Button) findViewById(R.id.bEdit);
         toggleVar = (Button) findViewById(R.id.toggleVar);
+
+        bGoBack3.setOnClickListener(this);
         gpsVar.setOnClickListener(this);
         bEdit.setOnClickListener(this);
         toggleVar.setOnClickListener(this);
 
         LinearLayout layout = (LinearLayout) findViewById(R.id.tmLayout);
+        LinearLayout tmLayout2 = (LinearLayout) findViewById(R.id.tmLayout2);
 
 
         TextView tv = new TextView(this);
@@ -46,22 +51,32 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
 
         temp = "Title: " + taskMap.get(currentId).get(0) + '\n';
         temp += "Description: " + taskMap.get(currentId).get(1) + '\n';
-        temp += "Range: " + taskMap.get(currentId).get(2) + '\n';
+        temp += "Category: " + taskMap.get(currentId).get(2) + '\n';
         temp += "Location: " + taskMap.get(currentId).get(3) + '\n';
-        temp += "Due Date: " + taskMap.get(currentId).get(4)
+        temp += "Start time: " + taskMap.get(currentId).get(4)
                 + "/" + taskMap.get(currentId).get(5) + " "
                 + taskMap.get(currentId).get(6) + ":" + taskMap.get(currentId).get(7)
                 + taskMap.get(currentId).get(8);
 
+        temp += "End time: " + taskMap.get(currentId).get(9)
+                + "/" + taskMap.get(currentId).get(10) + " "
+                + taskMap.get(currentId).get(11) + ":" + taskMap.get(currentId).get(12)
+                + taskMap.get(currentId).get(13);
+
+
+
+
         tv.setText(temp);
-        layout.addView(tv);
+        tmLayout2.addView(tv);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.gpsVar:
-                startActivity(new Intent(this, MapsActivity.class));
+                Uri uri = Uri.parse("https://www.google.com/maps/dir/My+Location/"+setUserLocationInput()+"/"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
                 break;
 
             case R.id.toggleVar:
@@ -74,6 +89,20 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
                 startActivity(new Intent(this, addTasks.class));
                 break;
 
+            case R.id.bGoBack3:
+                startActivity(new Intent(this, tasks.class));
+                break;
+
         }
+    }
+    public String setUserLocationInput(){
+        String setLocation = "";
+        if(taskMap.get(currentId).get(3).length() <= 0 && taskMap.get(currentId).get(2) != "Other" ){
+            setLocation = taskMap.get(currentId).get(2) + "+near+me";
+        }
+        else {
+            setLocation = taskMap.get(currentId).get(3);
+        }
+        return setLocation;
     }
 }
