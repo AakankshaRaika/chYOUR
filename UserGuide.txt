@@ -1,38 +1,31 @@
 User Guide: Getting Started
 
-
 Features:
 
 Tasks
-1. Adding tasks to the list! Press the add button to add a new task. 
-2. Fill in the fields for location, times, and categories.
+1. Adding tasks to the list! Press the "Add Task" button to add a new task.
+2. Fill in the fields for title, description, location, times, and categories.
 3. Go about your daily life and chYour will help you find time to fit these tasks into your schedule.
 
 Appointments
 1. As you are adding your task to the list, you must select a category.
-2. For the category option, choose “Appointments”.
-3. Make sure you enter a correct and accurate value for location and time.
+2. For the category option, choose “Other”.
+3. Make sure you enter a correct and accurate value for location (must be an address) and time.
 
-Adding a Calendar
-1. Go to the settings menu.
-2. Link either your Google Calendar or Outlook Calendar by pressing their respective buttons.
-3. Log in to your accounts and they will be updated on chYour!
-
-Adding Family Members
-1. Go to the settings menu.
-2. Click Add Family Members
-3. Search for them via email or phone number.
+Navigation Mode
+1. As you are filling in a new task in chYOUR, you have the option to choose a store/vendor or we can choose one closest to you.
+2. If your task falls under the category of Groceries, Hardware, or Pharmacy, you can optionally leave Location blank.
+3. If your task does not fall under any categories, you must select "Other" for your category, and you must filled out a location.
+4. After you added the task, go to the home page, click on the task, and press "GPS".
 
 Deleting Account
-1. Go to the settings menu.
-2. Click on deactivate account
-3. Confirm that you will be leaving chYour.
+1. Go to the Settings menu.
+2. Click on "Manage Account".
+3. Confirm that you will be leaving chYOUR.
 
 Cheers,
 chYour Support Team
 
 
-Oct 2nd 2016
+November 20, 2016
 Barry Lee , Aakanksha Raika
-
-## test

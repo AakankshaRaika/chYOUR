@@ -1,0 +1,21 @@
+date: November 7, 2016
+meeting_type: Team
+attendance: [aakanksh, alschmid, apillai, btgreen2, jrh7, vluo, yosephha]
+absent: [alectuoh, bclee]
+excused_absences: [dnhickso]
+task_progress: [
+  {ubit: aakanksh, progress: API - map, will finish soon},
+  {ubit: alectuoh, progress: absent},
+  {ubit: alschmid, progress: Working on task sync php},
+  {ubit: apillai, progress: Login, hash before transmission},
+  {ubit: bclee, progress: absent},
+  {ubit: btgreen2, progress: Local storage},
+  {ubit: dnhickso, progress: absent},
+  {ubit: jrh7, progress: Looking into email verification and family function},
+  {ubit: vluo, progress: login php},
+  {ubit: yosephha, progress: local task sync}
+  ]
+issues: []
+Notes:  |
+General sprint 4 task discussion and status reports, family function looking to be a stretch to complete before deadline due to scope of changes that will need to be made.
+

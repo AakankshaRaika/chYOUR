@@ -13,7 +13,7 @@ task_progress: [
   {ubit: dnhickso, progress: Location research and implementatio},
   {ubit: jrh7, progress: SSL research underway, assisting with php},
   {ubit: vluo, progress: absent},
-  {ubit: yosephha, Sending data to php file, no errors, but not properly acting}
+  {ubit: yosephha, progress: Sending data to php file, no errors, but not properly acting}
   ]
 issues: []
 Notes:  |

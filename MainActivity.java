@@ -1,9 +1,3 @@
-//The main activity I have submitted should be used with the Person.java class, Android Manifest, buildgradle and activity_main.xml.....
-//...I have uploaded.
-//To learn how to send http post request I have used online sources so if you guys need help with Post requests or using volley look at online resouces.
-//Since we only have some functionality in gui as of now and no compleate front end java classes there might need to be some imports needed.
-
-
 package com.hmkcode.android;
 
 import java.io.BufferedReader;
@@ -34,9 +28,7 @@ import android.app.Activity;
 public class MainActivity extends Activity implements OnClickListener {
 
     TextView tvIsConnected;
-    EditText etName;
-    EditText etpassword;
-    EditText etemail;
+    EditText etName,etCountry,etTwitter;
     Button btnPost;
 
     Person person;
@@ -46,8 +38,8 @@ public class MainActivity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_main);
         tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
         etName = (EditText) findViewById(R.id.etName);
-        etpassword = (EditText) findViewById(R.id.etpassword);
-        etemail = (EditText) findViewById(R.id.etTwitter);
+        etCountry = (EditText) findViewById(R.id.etCountry);
+        etTwitter = (EditText) findViewById(R.id.etTwitter);
         btnPost = (Button) findViewById(R.id.btnPost);
         if(isConnected()){
             tvIsConnected.setBackgroundColor(0xFF00CC00);
@@ -87,7 +79,7 @@ public class MainActivity extends Activity implements OnClickListener {
             // 6. set httpPost Entity
             httpPost.setEntity(se);
 
-            // 7. Set some headers to inform server about the type of the content   
+            // 7. Set some headers to inform server about the type of the content
             httpPost.setHeader("Accept", "application/json");
             httpPost.setHeader("Content-type", "application/json");
 
@@ -124,10 +116,9 @@ public class MainActivity extends Activity implements OnClickListener {
 
         switch(view.getId()){
             case R.id.btnPost:
-                if(!validate())
-                    Toast.makeText(getBaseContext(), "Enter some data!", Toast.LENGTH_LONG).show();
-                new HttpAsyncTask().execute("http://128.205.44.23/chyour/registration.php?fullname=" +
-                        etName.getText().toString() + "&email=" + etpassword.getText().toString() + "&password=" + etemail.getText().toString());
+
+                new HttpAsyncTask().execute("http://128.205.44.23/chyour/login.php?email=" + etCountry.getText().toString()+ "&password=" + etTwitter.getText().toString());
+                Log.e("HI","http://128.205.44.23/chyour/login.php?email=" + etTwitter.getText().toString()+ "&password=" + etCountry.getText().toString());
                 break;
         }
 
@@ -138,8 +129,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
             person = new Person();
             person.setName(etName.getText().toString());
-            person.setPassword(etpassword.getText().toString());
-            person.setEmail(etemail.getText().toString());
+            person.setPassword(etCountry.getText().toString());
+            person.setEmail(etTwitter.getText().toString());
 
             return POST(urls[0],person);
         }
@@ -153,9 +144,9 @@ public class MainActivity extends Activity implements OnClickListener {
     private boolean validate(){
         if(etName.getText().toString().trim().equals(""))
             return false;
-        else if(etpassword.getText().toString().trim().equals(""))
+        else if(etCountry.getText().toString().trim().equals(""))
             return false;
-        else if(etemail.getText().toString().trim().equals(""))
+        else if(etTwitter.getText().toString().trim().equals(""))
             return false;
         else
             return true;

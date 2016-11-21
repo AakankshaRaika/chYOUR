@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_SESSION['chyourdb'])
+if(!$_SESSION['id11983_chyourdb'])
 {
 	header('location:login.php');
 }
