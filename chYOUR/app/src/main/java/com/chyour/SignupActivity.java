@@ -2,6 +2,7 @@ package com.chyour;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,10 +21,8 @@ import org.json.JSONObject;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
-//import chyourgui.signIn;
+import chyourgui.signIn;
 import chyourgui.tasks;
 
 /*
@@ -40,7 +39,6 @@ public class SignupActivity extends Activity {
     private SessionManager session;
     private SQLiteHandler db;
 
-    private  String url;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,15 +58,6 @@ public class SignupActivity extends Activity {
         // SQLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
-        // Check if user is already logged in or not
-        if (session.isLoggedIn()) {
-            // User is already logged in. Take him to main activity
-//            Intent intent = new Intent(SignupActivity.this,
-//                    signIn.class);
-//            startActivity(intent);
-//            finish();
-        }
-
         // Register Button Click event
         btnRegister.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -76,20 +65,8 @@ public class SignupActivity extends Activity {
                 String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
 
-                url = "http://128.205.44.23/chyour/registration.php?fullname="
-                        +name+"&email="+ email+"&password="+password;
-
-                Toast.makeText(getApplicationContext(),
-                        "signing in...", Toast.LENGTH_LONG)
-                        .show();
-
                 if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
                     registerUser(name, email, password);
-
-                    Toast.makeText(getApplicationContext(),
-                            "wellcome: "+  name, Toast.LENGTH_LONG)
-                            .show();
-
 
                 } else {
                     Toast.makeText(getApplicationContext(),
@@ -103,17 +80,13 @@ public class SignupActivity extends Activity {
                     fileOutputStream.write((inputEmail.getText().toString()+
                             inputPassword.getText().toString()).getBytes());
                     fileOutputStream.close();
-                    Toast.makeText(getApplicationContext(), "User Saved", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(), "User Saved", Toast.LENGTH_LONG).show();
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
 
-                Intent intent = new Intent(SignupActivity.this,
-                        tasks.class);
-                startActivity(intent);
-                finish();
             }
         });
 
@@ -125,8 +98,19 @@ public class SignupActivity extends Activity {
         // Tag used to cancel the request
         String tag_string_req = "req_register";
 
+        Uri.Builder builder = new Uri.Builder();
+        builder.scheme("http")
+                .authority("128.205.44.23")
+                .appendPath("chyour")
+                .appendPath("registration.php")
+                .appendQueryParameter("fullname", name)
+                .appendQueryParameter("email", email)
+                .appendQueryParameter("password", password);
+
+        final String uri = builder.build().toString();
+
         StringRequest strReq = new StringRequest(Method.GET,
-                url, new Response.Listener<String>() {
+                uri, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
@@ -134,21 +118,16 @@ public class SignupActivity extends Activity {
                 try {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
+
                     if (!error) {
 
-                        String uid = jObj.getString("uid");
+                        Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!",
+                                Toast.LENGTH_LONG).show();
 
-                        JSONObject user = jObj.getJSONObject("user");
-                        String name = user.getString("fullname");
-                        String email = user.getString("email");
-                        String created_at = user
-                                .getString("created_at");
-
-                        // Inserting row in users table
-                        db.addUser(name, email, uid, created_at);
-
-                        Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
-
+                        Intent intent = new Intent(SignupActivity.this,
+                                signIn.class);
+                        startActivity(intent);
+                        finish();
 
                     } else {
 
@@ -157,8 +136,16 @@ public class SignupActivity extends Activity {
                         String errorMsg = jObj.getString("error_msg");
                         Toast.makeText(getApplicationContext(),
                                 errorMsg, Toast.LENGTH_LONG).show();
+                        if (errorMsg == "User already exists with email address ") {
+                            Log.e(TAG, errorMsg);
+                            Intent intent = new Intent(SignupActivity.this,
+                                    MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
                     }
                 } catch (JSONException e) {
+                    Log.e (TAG, "JSONException detected " );
                     e.printStackTrace();
                 }
 
@@ -167,26 +154,14 @@ public class SignupActivity extends Activity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.e(TAG, "Registration Error:--->err resp " + error.getMessage());
+                Log.e(TAG, "Registration Error: " + error.getMessage());
                 Toast.makeText(getApplicationContext(),
                         error.getMessage(), Toast.LENGTH_LONG).show();
             }
-        }) {
-
-            @Override
-            protected Map<String, String> getParams() {
-                Log.e(TAG, "Registration Error:--->err resp " + name + email + password);
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("fullname", name);
-                params.put("email", email);
-                params.put("password", password);
-
-                return params;
-            }
-
-        };
+        });
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
+
 
 }
