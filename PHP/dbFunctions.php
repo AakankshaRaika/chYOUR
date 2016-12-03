@@ -132,6 +132,30 @@ class dbFunctions {
                 }
 
         }
+	// Function to verify user in Database - Jason
+
+        public function verify($uid){
+
+                $stmt = $this->conn->prepare("UPDATE usersTBL set verified='1' WHERE userID = ?");
+                $stmt->bind_param("i", $uid);
+                $result = $stmt->execute();
+                $stmt->close();
+
+                if($result){
+                        return true;
+                } else {
+                        return false;
+                }
+
+        }
+        public function badUser($fullname, $password){
+
+        if(empty($fullname) || empty($password)){
+                        return true;
+                } else {
+                        return false;
+                }
+        }
 
 				
 }
