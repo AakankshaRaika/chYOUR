@@ -4,6 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.test.espresso.core.deps.guava.hash.HashCode;
+import android.support.test.espresso.core.deps.guava.hash.HashFunction;
+import android.support.test.espresso.core.deps.guava.hash.Hasher;
+import android.support.test.espresso.core.deps.guava.hash.Hashing;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +25,7 @@ import org.json.JSONObject;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 import chyourgui.signIn;
 import chyourgui.tasks;
@@ -32,6 +37,8 @@ import chyourgui.tasks;
 public class SignupActivity extends Activity {
     private static final String TAG = SignupActivity.class.getSimpleName();
     private Button btnRegister;
+    HashFunction hf = Hashing.md5();
+    Hasher hasher = hf.newHasher();
 
     private EditText inputFullName;
     private EditText inputEmail;
@@ -63,7 +70,9 @@ public class SignupActivity extends Activity {
             public void onClick(View view) {
                 String name = inputFullName.getText().toString().trim();
                 String email = inputEmail.getText().toString().trim();
-                String password = inputPassword.getText().toString().trim();
+                String passwordnothashed = inputPassword.getText().toString().trim();
+                HashCode passwordhashed = hasher.putString(passwordnothashed, StandardCharsets.UTF_8).hash();
+                String password= passwordhashed.toString();
 
                 if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
                     registerUser(name, email, password);
