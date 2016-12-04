@@ -50,11 +50,11 @@ public class tasks extends AppCompatActivity implements View.OnClickListener {
             temp += "Description: " + taskMap.get(key).get(1) + '\n';
             temp += "Category: "    + taskMap.get(key).get(2) + '\n';
             temp += "Location: "    + taskMap.get(key).get(3) + '\n';
-            temp += "Due Date: "    + taskMap.get(key).get(4) + "/"
-                                    + taskMap.get(key).get(5) + " "
-                                    + taskMap.get(key).get(6) + ":"
-                                    + taskMap.get(key).get(7)
-                                    + taskMap.get(key).get(8);
+            temp += "Due Date: "    + taskMap.get(key).get(4) + "/" // month
+                                    + taskMap.get(key).get(5) + " " // day
+                                    + taskMap.get(key).get(6) + ":" //hour
+                                    + taskMap.get(key).get(7)       //minute
+                                    + taskMap.get(key).get(8);      //pm
 
             bt.setText(temp);
             layout2.addView(bt);

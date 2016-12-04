@@ -2,6 +2,10 @@ package chyourgui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.test.espresso.core.deps.guava.hash.HashCode;
+import android.support.test.espresso.core.deps.guava.hash.HashFunction;
+import android.support.test.espresso.core.deps.guava.hash.Hasher;
+import android.support.test.espresso.core.deps.guava.hash.Hashing;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,6 +14,7 @@ import android.widget.EditText;
 
 import com.chyour.R;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,6 +24,8 @@ import java.util.Map;
 public class registration extends AppCompatActivity implements View.OnClickListener {
 
     static Map<String, List<String>> map = new HashMap<>();
+    HashFunction hf = Hashing.md5();
+    Hasher hasher = hf.newHasher();
 
     Button bSignUp;
     Button bGoBack;
