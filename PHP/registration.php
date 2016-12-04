@@ -26,6 +26,12 @@ if (isset($_GET['fullname']) && isset($_GET['email']) && isset($_GET['password']
         $response["error_msg"] = "Bad Email! Does not contain '@' or '.'";
         echo json_encode($response);
 
+    } else if($db->badUser($fullname, $password)){
+
+        $response["error"] = TRUE;
+        $response["error_msg"] = "Either username or password is empty!";
+        echo json_encode($response);
+
     } else {
         // create a new user
         $user = $db->storeUser($fullname, $email, $password);
