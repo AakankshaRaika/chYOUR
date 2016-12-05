@@ -56,7 +56,7 @@ public class TaskManagement extends AppCompatActivity implements View.OnClickLis
         temp += "Start time: " + taskMap.get(currentId).get(4)
                 + "/" + taskMap.get(currentId).get(5) + " "
                 + taskMap.get(currentId).get(6) + ":" + taskMap.get(currentId).get(7)
-                + taskMap.get(currentId).get(8);
+                + taskMap.get(currentId).get(8) + '\n';
 
         temp += "End time: " + taskMap.get(currentId).get(9)
                 + "/" + taskMap.get(currentId).get(10) + " "

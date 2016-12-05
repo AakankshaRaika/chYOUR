@@ -16,9 +16,7 @@ public class accountManagement extends AppCompatActivity implements View.OnClick
     Button bDeleteAccount;
     Button bUpdatePassword;
     Button bGoBack5;
-    EditText currentPassword1;
-    EditText newPassword2;
-    EditText confirmPassword1;
+
 
 
     @Override
@@ -30,9 +28,6 @@ public class accountManagement extends AppCompatActivity implements View.OnClick
         bUpdatePassword = (Button) findViewById(R.id.bUpdatePassword);
         bGoBack5 = (Button) findViewById(R.id.bGoBack5);
 
-        currentPassword1 = (EditText) findViewById(R.id.currentPassword1);
-        newPassword2 = (EditText) findViewById(R.id.newPassword2);
-        confirmPassword1 = (EditText) findViewById(R.id.confirmPassword1);
 
         bDeleteAccount.setOnClickListener(this);
         bGoBack5.setOnClickListener(this);
@@ -56,55 +51,11 @@ public class accountManagement extends AppCompatActivity implements View.OnClick
 
             case R.id.bUpdatePassword:
 
-                if (currentPassword1.getText().toString().length() < 1) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("All Fields not Filled in");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
-                if (newPassword2.getText().toString().length() < 1) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("All Fields not Filled in");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
-
-                if (confirmPassword1.getText().toString().length() < 1) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("All Fields not Filled in");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
-                if (!(currentPassword1.getText().toString().equals(inputPassword.getText().toString()))) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("Wrong Password");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
-                if (!(newPassword2.getText().toString().equals(confirmPassword1.getText().toString()))) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
-                    builder.setTitle("Alert");
-                    builder.setMessage("New Password and Confirm Password arent the same");
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
-                    break;
-                }
-
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(accountManagement.this);
                 builder.setTitle("Alert");
-                builder.setMessage("Password has been updated");
+                builder.setMessage("Change password coming soon :)");
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
-                startActivity(new Intent(this, settings.class));
                 break;
 
         }

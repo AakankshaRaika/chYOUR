@@ -39,6 +39,7 @@
         <activity android:name="chyourgui.tasks" />
         <activity android:name=".accountManagement" />
         <activity android:name=".accountDeletion" />
+        <activity android:name=".contactUs" />
         <activity android:name=".addTasks" />
         <activity android:name="chyourgui.TaskManagement" />
         <!--

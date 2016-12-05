@@ -1,6 +1,7 @@
 package com.chyour;
 
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
@@ -54,6 +55,11 @@ public class settings extends AppCompatActivity implements View.OnClickListener 
                     notifications = 1;
                 }
 
+                AlertDialog.Builder builder = new AlertDialog.Builder(settings.this);
+                builder.setTitle("Alert");
+                builder.setMessage("Notifications coming soon :)");
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
                 break;
 
             case R.id.bManageAccount:
