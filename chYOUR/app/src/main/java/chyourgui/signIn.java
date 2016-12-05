@@ -25,6 +25,7 @@ import java.util.Map;
 public class signIn extends AppCompatActivity implements View.OnClickListener {
 
     Button bSignUp;
+    Button bContactUs;
     Button bSignIn;
     Button bFAQ;
     EditText passwordVar;
@@ -35,12 +36,14 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
+        bContactUs = (Button) findViewById(R.id.bContactUs);
         emailVar = (EditText) findViewById(R.id.emailVar);
         passwordVar = (EditText) findViewById(R.id.passwordVar);
         bSignIn = (Button) findViewById(R.id.bSignIn);
         bFAQ = (Button) findViewById(R.id.bFAQ);
         bSignUp = (Button) findViewById(R.id.bSignUp);
         bSignIn.setOnClickListener(this);
+        bContactUs.setOnClickListener(this);
         bSignUp.setOnClickListener(this);
         bFAQ.setOnClickListener(this);
     }

@@ -69,10 +69,6 @@
             android:layout_height="wrap_content" android:background="#99aeaaaa" android:ems="10"
             android:hint="enter location here" android:inputType="textPersonName"
             android:textSize="15sp" android:textStyle="normal|bold" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView44" />
 
         <TextView android:id="@+id/textView13" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Complete by this time"
@@ -202,10 +198,6 @@
 
         <Button android:id="@+id/bAdd" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text=" Add to Tasks" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <Button
             android:text="go back"
