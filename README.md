@@ -33,3 +33,5 @@ Functionality
   Minior bugs to be ficed in future versions : 
   - Signup crashes if a personal tries to sign up with empty strings more than once.
   -Some times the GPS has to be clicked 2 times for the app to collect most recent userlocation data. 
+  
+  FAQ and userguide are in the Documentation folder. please see there for more information.
