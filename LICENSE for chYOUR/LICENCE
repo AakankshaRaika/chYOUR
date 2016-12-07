@@ -9,23 +9,55 @@ the authorship of their code but cannot remove their code at any time from the p
 Aakanksha Raika's written permission as the Project as a whole is a sole property of Aakanksha Raika.
 
 2.	WORKING AND SHARING PERMISSION: 
-Contributors only have the right to Marely tell employers they worked on this project and show there authored code if need be, for a contributor to be able to share(see point 11 for defination of share) any code as a “sample” he/she will have to ask me for permission via email at Aakanksha.raika.dev@gmail.com , in the email the will have to send me exact code they wish to share, if the code isn’t authored by them I will reply the email,declining the request. Otherwise Aakankhsha Raika will have approved unless it means making the whole repository public those requests will be declined. The contributor is supposed to ask me before every share the make unless I email them saying otherwise. In case of any profit made by the chYOUR application it will be divided between the members of chYOUR team CURRENT at that time for the version that made the profit and the members involved in version 1,profit will be distributed equally among all the members involved in these 2 respected versions. The list of these members version wise can be found below in point 6. Everyone who ever worked on chYOUR will also be mentioned as contributors during deployment in the demo Video and also in the license. Even though the individual code is authored under the creator, the application and idea as a whole is Owned solely by Aakanksha Raika. Only the current team members who are approved by Aakanksha Raika have the permission to work on any code and have access to the repository,past contributor will not have any access to the Repository nor will they have permission to work on chYOUR without my permission.Addition and Deletion of any code even by the current contributors should still be approved by Aakanksha Raika in writing on the issues the create on the GitHub. Past contributors are not allowed to work on the application in any form of way or have access to the source code current contributors are not allowed to share anything discussed to past members what so ever unless Aakanksha Raika makes them a Current contributor again. Current or past members cannot use chYOUR’s idea to make their own app.
+Contributors only have the right to Marely tell employers they worked on this project and show there 
+authored code if need be, for a contributor to be able to share(see point 11 for defination of share) 
+any code as a “sample” he/she will have to ask me for permission via email at Aakanksha.raika.dev@gmail.com,
+in the email the will have to send me exact code they wish to share, if the code isn’t authored by them 
+I will reply the email,declining the request. Otherwise Aakankhsha Raika will have approved unless it means
+making the whole repository public those requests will be declined. The contributor is supposed to ask me 
+before every share the make unless I email them saying otherwise. In case of any profit made by the chYOUR
+application it will be divided between the members of chYOUR team CURRENT at that time for the version that
+made the profit and the members involved in version 1,profit will be distributed equally among all the members
+involved in these 2 respected versions. The list of these members version wise can be found below in point 6.
+Everyone who ever worked on chYOUR will also be mentioned as contributors during deployment in the demo Video
+and also in the license. Even though the individual code is authored under the creator, the application and 
+idea as a whole is Owned solely by Aakanksha Raika. Only the current team members who are approved by Aakanksha Raika
+have the permission to work on any code and have access to the repository,past contributor will not have any
+access to the Repository nor will they have permission to work on chYOUR without my permission.Addition and Deletion
+of any code even by the current contributors should still be approved by Aakanksha Raika in writing on the 
+issues the create on the GitHub. Past contributors are not allowed to work on the application in any form of 
+way or have access to the source code current contributors are not allowed to share anything discussed to past
+members what so ever unless Aakanksha Raika makes them a Current contributor again. Current or past members cannot
+use chYOUR’s idea to make their own app.
 
 3.	PATENT LICENSE RIGHTS:
-Subject to the terms and conditions of this License, the right to obtain a patent for the idea of chYOUR solely belongs to Aakanksha Raika.
+Subject to the terms and conditions of this License, the right to obtain a patent for the idea of chYOUR solely belongs to
+Aakanksha Raika.
 
 4.	REDISTRIBUTION:
-Redistribution rights of any kind are solely owned by Aakanksha Raika. If contributors need permission for sharing the application in any kind they need to email Aakanksha Raika explicitly stating, their request along with the reason. And only will be allowed to share/redistribute is the request is approved by Aakanksha Raika in written via email or letter. They will have to follow this exact license and will never own the idea in what so ever way. 
+Redistribution rights of any kind are solely owned by Aakanksha Raika. If contributors need permission for sharing the 
+application in any kind they need to email Aakanksha Raika explicitly stating, their request along with the reason. 
+And only will be allowed to share/redistribute is the request is approved by Aakanksha Raika in written via email or 
+letter. They will have to follow this exact license and will never own the idea in what so ever way. 
 
 5.	DISCLAIMER OF WARRENTY:
-Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES. You as a user are solely responsible for determining the appropriateness of using the Work and assume any risks associated with Your exercise of permissions under this License see point 9 for user rights.
+Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions)
+on an "AS IS" BASIS, WITHOUT WARRANTIES. You as a user are solely responsible for determining the appropriateness of
+using the Work and assume any risks associated with Your exercise of permissions under this License see point 9 for user rights.
       
 6.	Contributor Listing and Repository permissions: 
 Owner: Aakanksha Raika. 
+
 Current Contributors: Aakanksha Raika, Barry Lee, Thomas Nunno, Todd Mitchell.
-Past Contributors: Jason Hatfield, Alec Tuohy, Andrea Schmidlin, Dominique Hickson, Vivian Luo, Yosephh Habtewold, Brian Green, Achintya Pillai.
-Version 1 and 2 Team/Contributors: Aakanksha Raika, Barry Lee, Achintya Pillai, Jason Hatfield, Alec Tuohy, Andrea Schmidlin, Dominique Hickson,Vivian Luo, Yosephh Habtewold, Brian Green.
-Members mentioned below have permission until 12th Dec 2016 to have access to the repository unless on 13th Dec 2016 are then shifted to current contributor listing. 
+
+Past Contributors: Jason Hatfield, Alec Tuohy, Andrea Schmidlin, Dominique Hickson, Vivian Luo, Yosephh Habtewold, Brian Green,
+Achintya Pillai.
+
+Version 1 and 2 Team/Contributors: Aakanksha Raika, Barry Lee, Achintya Pillai, Jason Hatfield, Alec Tuohy, Andrea Schmidlin,
+Dominique Hickson,Vivian Luo, Yosephh Habtewold, Brian Green.
+
+Members mentioned below have permission until 12th Dec 2016 to have access to the repository unless on 13th Dec 2016 are 
+then shifted to current contributor listing. 
 Version 1 bugs fixing permission : Yosephh Habtewold, Achintya Pillai.
       
 7.FORKING:
@@ -34,7 +66,8 @@ Current approved fork holders: Barry Lee.
 
 8.The rights to make modifications in the license are solely owned by Aakanksha Raika.   
                                        
-9.User permissions: Users are not allowed to obtain any source code. The only way they can access chYOUR is Google Play store. Any other way is not approved by chYOUR team and they are responsible for their actions. Non the less they are not permitted to get their hands on the source code. 
+9.User permissions: Users are not allowed to obtain any source code. The only way they can access chYOUR is Google Play store.
+Any other way is not approved by chYOUR team and they are responsible for their actions. Non the less they are not permitted to get their hands on the source code. 
 
 10.All the emails and letters received by the contributors from Aakanksha Raika needs to be hand Signed by Aakanksha Raika with her legal signature so as to avoid fraud. 
 
