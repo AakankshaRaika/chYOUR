@@ -1,6 +1,3 @@
-# chYOUR
-README created by Aakanksha Raika and Dominique Hickson 
-09/11/2016 6:18PM
 After a user downlloads chYOUR from the google play store they get the following ONLY : 
 
 Features:
