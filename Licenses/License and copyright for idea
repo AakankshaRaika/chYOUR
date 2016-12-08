@@ -1,0 +1,99 @@
+The idea for application which will be slowly developed in Android, iOS,
+web application and any other platform we can think of below weather 
+impletemented int his repository or another is a sole copyright and owned  
+by Aakanksha Raika. A Person can not use this idea what so ever unless 
+Aakanksha Raika gives them a writen permission to do so by expliciting the 
+permission of using the idea along with any conditions Aakanksha Raika might have.
+In that permission document she will also have to specify which parts of 
+the idea she is allowing to be used. 
+
+Idea originally consisted of the following and will be implemented as a whole 
+ONLU by Aakankhsha Raika , Thomas Nunno and Todd Mitchell as a team under a
+repository Aakanksha Raika will make under her own github: 
+
+- Log in, log out and sign up: 
+    a) With the application directly. 
+    b) With google. 
+    c) With outlook.
+ 
+- Verify the account by confirming it through the email you used
+
+- Add task list the application either by directly adding it with
+  a mechanism in the application or by syncing their google or 
+  outlook or the phone calendars to the application. This way
+  they will only have to open one app. 
+
+-Range: Range is a feature that allows a person to set a range of
+ detour from anywhere between 0-10/15 miles. This will be used in
+ the map functionality. The main purpose of the range function is
+ to add a detour to the user’s route within the range that will
+ help him or her reduce the size of the to-do list for the day or
+ within their start-end time.
+
+-Map: Map will either be implemented using google APIs or connecting 
+ google maps to the app. This map will be used to detect is the user 
+ is on the go. If he or she is then we will use range to add detours. 
+
+-Notification: This functionally will be used to notify the user about
+ an upcoming item in the to-do list , ending item in the to-do list or
+ if the location they desire is in their set range. They will also be 
+ notified before we add a detour on their route.there also will be notification
+ for if people add you to a group, you join a group . someone in your group leaves, 
+ or if you leave a group. 
+
+-Delete Account: This will simply make the account settings the lists 
+and any other information the fed the application to disappear from the 
+application’s record/servers.
+
+-Shared Lists: This functionality will enable the users to make groups 
+within the application and maintain 2 lists personal and shared. The 
+shared one will be uniform across the group, although only the person
+near a “desired location” will be notified not all of them. They all 
+will be able to add and mark of to-do items and keep track of everything 
+much more efficiently. 
+
+-Chat room: This functionally will enable to the groups to be able to make 
+conversations. There will also be functionality like @username. If a user
+uses that in the chat only the @ user will be notified not all the members.
+This is so that not everyone is pinged at all hours. The application might
+consist of personal chats.  If within a group chat a user uses @addTask and 
+writes something in front of it the application will add that to the list
+automatically.
+
+-Location:  A user can either give us a location and/or select from the category. 
+
+-Category: 
+     a)Grocery 
+     b)Pharmacy
+  c)Hardware
+  d)Other: for other a user will have to give the application a location input.  
+
+-Edit tasks: A user can edit an existing task through this. 
+
+-Delete Tasks: A user can either delete the task before they completed it or after.
+Its completely their choice. The application will delete the task by itself once its
+past end time. 
+
+-Start and end time: a functionality to keep track of the time span a task needs to 
+ be completed in. 
+
+-Calendar: A user can either sync their google/outlook/phone calendar to the 
+ application and access it from there along with adding more tasks to the 
+ calendar through the application itself or they can chose to ask the application 
+ to create an internal calendar for them which will only consist of the tasks
+ they add to the application.
+
+-Add group and group: A user can add as many as groups they want to add to their account. 
+ The max size for a group will be 20 people. You can also assign a task within
+ a group to specific people by using @username. Which will add the task to not
+ only to the group list but also to that users personal list.
+
+-Leave group: A user can access the leave group functionality which will basically 
+ displaay a list of all the groups they are in and they can select all the groups 
+ they wish to leave and leave them all with one click.
+
+-Settings: Application settings will have but will not be limited to -> sign out/ log out,
+manage account , delete account , add group , leave group , sign in with google/outlook , 
+add calendar, Make calendar,Notification settings.   
+
+Copyright 8th December 2016 @ Aakanksha Raika
