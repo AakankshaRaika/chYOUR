@@ -1,8 +1,5 @@
 chYOUR Frequently Asked Questions:
 
-• How do I turn off notifications?
-	• Go to Settings and toggle notifications from there.
-
 • What are the recommended locations?
 	• The recommended locations are based off of two things (1) your current location and (2) the category the task it is currently labeled under. We find the location of what you need completed and we add it to your task.
 
