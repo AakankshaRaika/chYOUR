@@ -3,6 +3,10 @@ package chyourgui;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.test.espresso.core.deps.guava.hash.HashCode;
+import android.support.test.espresso.core.deps.guava.hash.HashFunction;
+import android.support.test.espresso.core.deps.guava.hash.Hasher;
+import android.support.test.espresso.core.deps.guava.hash.Hashing;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -26,6 +30,7 @@ import org.json.JSONObject;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 //This is Yosephh changed code for the adress for the server (authored by Yosephh)
 
@@ -36,6 +41,10 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
     Button bFAQ;
     EditText passwordVar;
     EditText emailVar;
+
+    HashFunction hf = Hashing.md5();
+    Hasher hasher = hf.newHasher();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +68,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
 
                 String email = emailVar.getText().toString().trim();
                 String password = passwordVar.getText().toString().trim();
+                HashCode passwordhashed = hasher.putString(password, StandardCharsets.UTF_8).hash();
 
                 if (emailVar.length() < 1 || passwordVar.length() < 0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
@@ -68,7 +78,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                     alertDialog.show();
                 }
 
-                checkLogin(email, password);
+                checkLogin(email, passwordhashed.toString());
 
                 try {
                     openFileInput(emailVar.getText().toString() + passwordVar.getText().toString());
