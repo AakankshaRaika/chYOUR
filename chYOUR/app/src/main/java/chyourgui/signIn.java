@@ -22,6 +22,8 @@ import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
 
+//This is Yosephh changed code for the adress for the server (authored by Yosephh)
+
 public class signIn extends AppCompatActivity implements View.OnClickListener {
 
     Button bSignUp;
@@ -31,12 +33,17 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
     EditText passwordVar;
     EditText emailVar;
 
+
+    HashFunction hf = Hashing.md5();
+    Hasher hasher = hf.newHasher();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        bContactUs = (Button) findViewById(R.id.bContactUs);
+
         emailVar = (EditText) findViewById(R.id.emailVar);
         passwordVar = (EditText) findViewById(R.id.passwordVar);
         bSignIn = (Button) findViewById(R.id.bSignIn);
@@ -57,6 +64,10 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                // map = registration.map;
 
 
+                String email = emailVar.getText().toString().trim();
+                String password = passwordVar.getText().toString().trim();
+                HashCode passwordhashed = hasher.putString(password, StandardCharsets.UTF_8).hash();
+
 
                 if (emailVar.length() < 1 || passwordVar.length() < 0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
@@ -67,23 +78,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
                     break;
                 }
 
-                //if (map.containsKey(emailVar.getText().toString()) == false) {
-                 //   AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
-                 //   builder.setTitle("Alert");
-                 //   builder.setMessage("Wrong Username and or Password");
-                 //   AlertDialog alertDialog = builder.create();
-                 //   alertDialog.show();
-                 //   break;
-                //}
-                //if (map.get(emailVar.getText().toString()).get(1).equals(passwordVar.getText().toString()) == false) {
-                //    AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
-                //    builder.setTitle("Alert");
-                //    builder.setMessage("Wrong Username and or Password");
-                //    AlertDialog alertDialog = builder.create();
-                //    alertDialog.show();
-               //     break;
-               // }
-
+                checkLogin(email, passwordhashed.toString());
 
 
                 try {
