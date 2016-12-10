@@ -3,10 +3,6 @@ package chyourgui;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.test.espresso.core.deps.guava.hash.HashCode;
-import android.support.test.espresso.core.deps.guava.hash.HashFunction;
-import android.support.test.espresso.core.deps.guava.hash.Hasher;
-import android.support.test.espresso.core.deps.guava.hash.Hashing;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -30,7 +26,8 @@ import org.json.JSONObject;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+
+//This is Yosephh changed code for the adress for the server (authored by Yosephh)
 
 public class signIn extends AppCompatActivity implements View.OnClickListener {
 
@@ -39,15 +36,11 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
     Button bFAQ;
     EditText passwordVar;
     EditText emailVar;
-    HashFunction hf = Hashing.md5();
-    Hasher hasher = hf.newHasher();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-
 
         emailVar = (EditText) findViewById(R.id.emailVar);
         passwordVar = (EditText) findViewById(R.id.passwordVar);
@@ -65,9 +58,7 @@ public class signIn extends AppCompatActivity implements View.OnClickListener {
             case R.id.bSignIn:
 
                 String email = emailVar.getText().toString().trim();
-                String passwordnotHashed = passwordVar.getText().toString().trim();
-                HashCode passwordhashed = hasher.putString(passwordnotHashed, StandardCharsets.UTF_8).hash();
-                String password= passwordhashed.toString();
+                String password = passwordVar.getText().toString().trim();
 
                 if (emailVar.length() < 1 || passwordVar.length() < 0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(signIn.this);
